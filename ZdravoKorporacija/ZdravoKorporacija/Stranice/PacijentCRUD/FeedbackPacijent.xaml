@@ -1,0 +1,40 @@
+﻿<Window x:Class="ZdravoKorporacija.Stranice.PacijentCRUD.FeedbackPacijent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoKorporacija.Stranice.PacijentCRUD"
+        mc:Ignorable="d"
+        Title="Zdravo korporacija" Height="500" Width="440"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="#784c60b9">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="20*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Ostavi feedback" FontWeight="Bold" Grid.Row="1" Grid.ColumnSpan="2" FontSize="28" Grid.Column="1" HorizontalAlignment="Center" Margin="87,6,57,5" Width="230" Height="55" FontFamily="Corbel" Foreground="#FF1E243E"/>
+        <TextBlock Text="Komentar:" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Left" FontSize="18" Margin="0,3,0,83" FontFamily="Corbel" Foreground="#FF1E243E" Grid.RowSpan="3"/>
+        <RichTextBox x:Name="textbox"  Grid.Row="5" Grid.Column="1" FontFamily="Corbel" FontSize="16" Foreground="#FF1E243E"  Grid.RowSpan="5" Background="#FFEAEAEA" Grid.ColumnSpan="3" Margin="94,4,69,17" />
+
+        <Button Content="Odustani" FontWeight="Bold"  Grid.Row="11" Grid.Column="1" Grid.ColumnSpan="2" Margin="40,4,162,4" BorderBrush="#FF1E243E" FontFamily="Corbel" FontSize="18" Background="#CCD84D4D" Foreground="#FF1E243E" Height="40" Width="120" RenderTransformOrigin="0.008,0.437"/>
+        <Button Content="Potvrdi" FontWeight="Bold" Grid.Row="11" Grid.Column="2"  Click="potvrdi" BorderBrush="#FF1E243E" FontFamily="Corbel" FontSize="18" Background="#CCD84D4D" Foreground="#FF1E243E" Height="40" Width="120"/>
+    </Grid>
+</Window>

@@ -1,0 +1,73 @@
+[
+  {
+    "alternativniLekovi": [
+      {
+        "alternativniLekovi": [],
+        "Id": 1,
+        "Proizvodjac": "Nema",
+        "Sastojci": "Nempojma",
+        "NusPojave": "Nema",
+        "NazivLeka": "Cardiopirin",
+        "Kolicina": 0.0,
+        "Alergeni": null
+      },
+      {
+        "alternativniLekovi": [],
+        "Id": 2,
+        "Proizvodjac": "Nema",
+        "Sastojci": "Nempojma",
+        "NusPojave": "Nema",
+        "NazivLeka": "Brufen",
+        "Kolicina": 0.0,
+        "Alergeni": null
+      },
+      {
+        "alternativniLekovi": [],
+        "Id": 3,
+        "Proizvodjac": "Nema",
+        "Sastojci": "Nempojma",
+        "NusPojave": "Nema",
+        "NazivLeka": "Mendilex",
+        "Kolicina": 0.0,
+        "Alergeni": null
+      },
+      {
+        "alternativniLekovi": [],
+        "Id": 4,
+        "Proizvodjac": "Nema",
+        "Sastojci": "Nempojma",
+        "NusPojave": "Nema",
+        "NazivLeka": "Amoksicilin",
+        "Kolicina": 0.0,
+        "Alergeni": null
+      }
+    ],
+    "Id": 5,
+    "Proizvodjac": "r",
+    "Sastojci": "r",
+    "NusPojave": "r",
+    "NazivLeka": "r",
+    "Kolicina": 500.0,
+    "Alergeni": null
+  },
+  {
+    "alternativniLekovi": [],
+    "Id": 6,
+    "Proizvodjac": "e",
+    "Sastojci": "e",
+    "NusPojave": "e",
+    "NazivLeka": "e",
+    "Kolicina": 200.0,
+    "Alergeni": null
+  },
+  {
+    "alternativniLekovi": [],
+    "Id": 7,
+    "Proizvodjac": "Alkaloid",
+    "Sastojci": "paracetamol",
+    "NusPojave": "nesanica",
+    "NazivLeka": "cafetin",
+    "Kolicina": 250.0,
+    "Alergeni": null
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "lekari": [],
+    "Id": 2,
+    "Lek": {
+      "alternativniLekovi": [],
+      "Id": 0,
+      "Proizvodjac": "e",
+      "Sastojci": "e",
+      "NusPojave": "e",
+      "NazivLeka": "e",
+      "Kolicina": 200.0,
+      "Alergeni": null
+    },
+    "Komentar": null,
+    "NeophodnihPotvrda": 2,
+    "BrojPotvrda": 1
+  },
+  {
+    "lekari": [],
+    "Id": 3,
+    "Lek": {
+      "alternativniLekovi": [],
+      "Id": 0,
+      "Proizvodjac": "Alkaloid",
+      "Sastojci": "paracetamol",
+      "NusPojave": "nesanica",
+      "NazivLeka": "cafetin",
+      "Kolicina": 250.0,
+      "Alergeni": null
+    },
+    "Komentar": null,
+    "NeophodnihPotvrda": 2,
+    "BrojPotvrda": 1
+  }
+]

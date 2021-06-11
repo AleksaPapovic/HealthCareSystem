@@ -1,0 +1,16 @@
+﻿<Window x:Class="ZdravoKorporacija.Stranice.SekretarPREGLEDI.dodajAlergen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoKorporacija.Stranice.SekretarPREGLEDI"
+        mc:Ignorable="d"
+        Title="dodajAlergen"  Height="250" Width="455" Background="CadetBlue">
+    <Grid Margin="0,0,0,3">
+        <TextBlock Text="Dodaj Alergen:" TextWrapping="Wrap" Margin="19,60,291,154" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox Name="dodaj"  TextWrapping="Wrap" Margin="0,61,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="164"/>
+        <Button Content="IZMENI" Click="Button_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" Width="71" Margin="116,168,0,0"/>
+        <Button Content="ODUSTANI" Click="Button_Click_1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" Width="64" Margin="264,168,0,0"/>
+
+    </Grid>
+</Window>

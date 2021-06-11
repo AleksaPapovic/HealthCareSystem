@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<ArrayOfLekDTO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LekDTO>
+    <alternativniLekovi>
+      <LekDTO>
+        <alternativniLekovi />
+        <Id>1</Id>
+        <Proizvodjac>Nema</Proizvodjac>
+        <Sastojci>Nempojma</Sastojci>
+        <NusPojave>Nema</NusPojave>
+        <NazivLeka>Cardiopirin</NazivLeka>
+        <Kolicina>0</Kolicina>
+      </LekDTO>
+      <LekDTO>
+        <alternativniLekovi />
+        <Id>2</Id>
+        <Proizvodjac>Nema</Proizvodjac>
+        <Sastojci>Nempojma</Sastojci>
+        <NusPojave>Nema</NusPojave>
+        <NazivLeka>Brufen</NazivLeka>
+        <Kolicina>0</Kolicina>
+      </LekDTO>
+      <LekDTO>
+        <alternativniLekovi />
+        <Id>3</Id>
+        <Proizvodjac>Nema</Proizvodjac>
+        <Sastojci>Nempojma</Sastojci>
+        <NusPojave>Nema</NusPojave>
+        <NazivLeka>Mendilex</NazivLeka>
+        <Kolicina>0</Kolicina>
+      </LekDTO>
+      <LekDTO>
+        <alternativniLekovi />
+        <Id>4</Id>
+        <Proizvodjac>Nema</Proizvodjac>
+        <Sastojci>Nempojma</Sastojci>
+        <NusPojave>Nema</NusPojave>
+        <NazivLeka>Amoksicilin</NazivLeka>
+        <Kolicina>0</Kolicina>
+      </LekDTO>
+    </alternativniLekovi>
+    <Id>5</Id>
+    <Proizvodjac>r</Proizvodjac>
+    <Sastojci>r</Sastojci>
+    <NusPojave>r</NusPojave>
+    <NazivLeka>r</NazivLeka>
+    <Kolicina>500</Kolicina>
+  </LekDTO>
+  <LekDTO>
+    <alternativniLekovi />
+    <Id>7</Id>
+    <Proizvodjac>Alkaloid</Proizvodjac>
+    <Sastojci>paracetamol</Sastojci>
+    <NusPojave>nesanica</NusPojave>
+    <NazivLeka>cafetin</NazivLeka>
+    <Kolicina>250</Kolicina>
+  </LekDTO>
+  <LekDTO>
+    <alternativniLekovi />
+    <Id>6</Id>
+    <Proizvodjac>e</Proizvodjac>
+    <Sastojci>e</Sastojci>
+    <NusPojave>e</NusPojave>
+    <NazivLeka>e</NazivLeka>
+    <Kolicina>200</Kolicina>
+  </LekDTO>
+</ArrayOfLekDTO>

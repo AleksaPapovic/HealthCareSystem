@@ -1,0 +1,47 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="BackgroundColor" Color="#80ccff"/>
+
+    <Style TargetType="Button">
+        <Setter Property="Background" Value="LightGray"/>
+    </Style>
+
+    <Style x:Key="header_style" TargetType="Grid">
+        <Setter Property="Background"
+            Value = "LightGray"></Setter>
+
+    </Style>
+
+    <Style TargetType="Menu" x:Key="MenuStyle">
+        <Setter Property="Background" Value="LightBlue"/>
+    </Style>
+
+    <Style TargetType="MenuItem">
+        <Setter Property="Background" Value="Green"/>
+    </Style>
+    
+    <Style  x:Key="label" TargetType="Label">
+        <Setter Property="Foreground" Value="Black"/>
+    </Style>
+
+
+    <Style  x:Key="textblock" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="Black"/>
+    </Style>
+
+
+    <Style  x:Key="dataGrid" TargetType="DataGrid">
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="Background" Value="White"/>
+    </Style>
+
+    <Style x:Key="menuSub" TargetType="MenuItem">
+        
+    </Style>
+    <Style x:Key="list" TargetType="ListBox">
+       
+    </Style>
+    <Style x:Key="dataGridHeader" TargetType="DataGridColumnHeader">
+        
+    </Style>
+</ResourceDictionary>

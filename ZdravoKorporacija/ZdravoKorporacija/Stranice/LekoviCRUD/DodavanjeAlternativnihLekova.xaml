@@ -1,0 +1,21 @@
+﻿<Window x:Class="ZdravoKorporacija.Stranice.LekoviCRUD.DodavanjeAlternativnihLekova"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoKorporacija.Stranice.LekoviCRUD"
+        mc:Ignorable="d"
+        Title="DodavanjeAlternativnihLekova" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="dgLekovi" Margin="35,110,462,94" SelectionChanged="dgLekovi_SelectionChanged"/>
+        <DataGrid x:Name="dgAlternativni" Margin="429,110,68,94" SelectionChanged="dgAlternativni_SelectionChanged"/>
+        <Button x:Name="button" Content="&gt;&gt;" HorizontalAlignment="Left" Margin="374,187,0,0" VerticalAlignment="Top" Height="30" Width="30" Click="button_Click" RenderTransformOrigin="0.473,1.708"/>
+        <Button x:Name="button1" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="374,263,0,0" VerticalAlignment="Top" Height="30" Width="30" Click="button1_Click" RenderTransformOrigin="0.573,2.288"/>
+        <Label x:Name="dodavanjeLabel" Content="Dodavanje alternativnih lekova za lek :   " HorizontalAlignment="Left" Margin="35,16,0,0" VerticalAlignment="Top" Width="318"/>
+        <Label x:Name="label" Content="Lekovi" HorizontalAlignment="Left" Margin="57,80,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy" Content="Alternativni lekovi" HorizontalAlignment="Left" Margin="446,80,0,0" VerticalAlignment="Top"/>
+        <Button Content="Potvrdi&#xA;" HorizontalAlignment="Left" Margin="278,375,0,0" VerticalAlignment="Top" Height="26" Width="92" Click="potvrdi"/>
+        <Button Content="Odustani" HorizontalAlignment="Left" Margin="400,375,0,0" VerticalAlignment="Top" Height="26" Width="96" Click="odustani"/>
+
+    </Grid>
+</Window>

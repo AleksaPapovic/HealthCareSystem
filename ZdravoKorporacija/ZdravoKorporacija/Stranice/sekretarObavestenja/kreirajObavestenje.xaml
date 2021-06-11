@@ -1,0 +1,20 @@
+﻿<Window x:Class="ZdravoKorporacija.Stranice.sekretarObavestenja.kreirajObavestenje"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoKorporacija.Stranice.sekretarObavestenja"
+       mc:Ignorable="d"
+        Title="Kreiranje obavestenja" Height="450" Width="450" Background="CadetBlue">
+    <Grid>
+        <TextBox Text="" Name="obv" TextWrapping="Wrap" Margin="89,128,89,184" RenderTransformOrigin="0.526,0.611"/>
+        <Button HorizontalAlignment="Left" Height="25" Margin="89,331,0,0" VerticalAlignment="Top" Width="83" Click="Button_Click">
+            <Button Content="OBAVESTI"/>
+        </Button>
+        <Button HorizontalAlignment="Left" Height="25" Margin="278,331,0,0" VerticalAlignment="Top" Width="83" Click="Button_Click_1">
+            <Button Content="ODUSTANI"/>
+        </Button>
+
+
+    </Grid>
+</Window>

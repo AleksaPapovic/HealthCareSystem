@@ -1,0 +1,22 @@
+﻿<Window x:Class="ZdravoKorporacija.Stranice.SekretarLekari.radniDani"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoKorporacija.Stranice.SekretarLekari"
+       mc:Ignorable="d"
+        Title="prikaziKarton" Height="350" Width="555" Background="CadetBlue">
+    <Grid Margin="0,0,0,3">
+        <Button Content="NAZAD" Click="Button_Click_1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" Width="64" Margin="1089,556,0,0"/>
+        <DataGrid Name="dgDani" AutoGenerateColumns="False" Margin="99,29,96,85">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Datum" Binding="{Binding dan.Date}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Slobodan dan" Binding="{Binding odmor}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Prva smena" Binding="{Binding prvaSmena}"></DataGridTextColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBlock Visibility="Hidden" Name="nemaText" Text="Pacijent nema karton!" TextWrapping="Wrap" Margin="196,55,129,143" RenderTransformOrigin="0.422,0.251"/>
+
+    </Grid>
+</Window>

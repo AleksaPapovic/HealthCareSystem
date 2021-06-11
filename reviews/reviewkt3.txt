@@ -1,0 +1,8 @@
+Dusan Lekic, review za Aleksu Papovica(Sequence diagram)
+Mozda faktorisati Upravnik Service kreiranje staticke i dinamicke u InventarDinamicke(InventarStaticke) Service kao sto si u kodu implementirao.
+Neke poruke bi mogle imati lepsi naziv.Generalno pokriveni svi end case slucajevi preko WPF ogranicenja i racunanja slobodnog termina.
+Aleksa Papovic, review za Lekica Dusana(Activity diagram)
+Dijagram je prost, mozda malo vise u detalje sa koracima da ide. Nazivi aktivnosti mogu biti precizniji.
+U implementaciji fali filtriranje i unos leka koji nije dostupan.
+Mozda decomposed activity za neku sekvencu koraka. Nema konkurentnog izvrsavanja aktivnosti.
+

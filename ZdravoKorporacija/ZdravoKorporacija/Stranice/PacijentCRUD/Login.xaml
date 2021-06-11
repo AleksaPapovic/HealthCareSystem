@@ -1,0 +1,78 @@
+﻿<Window x:Class="ZdravoKorporacija.Stranice.PacijentCRUD.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoKorporacija.Stranice.PacijentCRUD"
+        mc:Ignorable="d"
+   Title="Zdravo korporacija"
+        Height="768"
+        Width="1366" 
+        WindowState="Maximized"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="591*"/>
+            <RowDefinition Height="63*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="240"/>
+            <ColumnDefinition Width="1053*"/>
+            <ColumnDefinition Width="240*"/>
+        </Grid.ColumnDefinitions>
+        <Button  IsHitTestVisible="False" Grid.Row="0" Grid.Column="0" Height ="120" Width="240" Background="Transparent" BorderBrush="Transparent">
+            <Image Source="/Images/output-onlinepngtools.png" Stretch="None"/>
+        </Button>
+        <Rectangle Stroke="Black" StrokeThickness="3" Grid.Column="1" Grid.Row="1" />
+        <Grid Grid.Row="1" Margin="17,39,0,0" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="130*"/>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="45*"/>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="45*"/>
+                <RowDefinition Height="59*"/>
+                <RowDefinition Height="34*"/>
+                <RowDefinition Height="34*"/>
+                <RowDefinition Height="14*"/>
+                <RowDefinition Height="59*"/>
+                <RowDefinition Height="18*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--<Rectangle Stroke="Black" StrokeThickness="3" Grid.ColumnSpan="3" Grid.RowSpan="9"/>-->
+            <Label Content=" Prijavi se" FontSize="65" HorizontalAlignment="Center" Grid.Row="0" Grid.Column="1" Width="302" />
+            <Label Content="Korisničko ime:" FontSize="22" HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="1"/>
+            <TextBox Name="imeText" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" FontSize="22" Grid.Row="2" Grid.Column="1" BorderBrush="Black"/>
+            <Button x:Name="tastIme" Width="60" HorizontalAlignment="Right" Grid.Row="2" Grid.Column="1" Click="tastIme_Click" BorderBrush="Black">
+                <Image Source="/Images/icons8-keyboard-40.png"></Image>
+            </Button>
+            <Button x:Name="tastLoz" Width="60" HorizontalAlignment="Right" Grid.Row="4" Grid.Column="1" Click="tastLoz_Click" BorderBrush="Black">
+                <Image Source="/Images/icons8-keyboard-40.png"></Image>
+            </Button>
+            <Label Content="Lozinka:" FontSize="22" Grid.Row="3" HorizontalAlignment="Left" Grid.Column="1"/>
+            <PasswordBox Name="lozinkaText" Background="Transparent" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Center" FontSize="22" Grid.Row="4" Grid.Column="1" BorderBrush="Black" />
+            <CheckBox x:Name="wizardCb" VerticalAlignment="Center" Grid.Row="5" Grid.Column="1" Content="Prvi put koristim aplikaciju" Checked="wizardCb_Checked" >
+                <CheckBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1.8" ScaleY="1.8"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </CheckBox.RenderTransform>
+            </CheckBox>
+            <Button Content="Potvrdi" Grid.Row="9" FontSize="22" Click="Button_Click" Grid.Column="1" HorizontalAlignment="Center" Width="173" />
+            <TextBox Name="pogresniKred" Text="" IsHitTestVisible="False" IsReadOnly="True" TextAlignment="Center" Foreground="Red" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" FontSize="16" Grid.Row="7" Grid.Column="1" BorderBrush="Transparent"/>
+
+        </Grid>
+
+    </Grid>
+
+</Window>

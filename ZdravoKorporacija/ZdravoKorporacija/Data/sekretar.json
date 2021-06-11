@@ -1,0 +1,24 @@
+[
+  {
+    "Ime": "Stefan",
+    "Prezime": "Mitrovic",
+    "Jmbg": 4444567890123,
+    "BrojTelefona": 621100333,
+    "Mejl": "mitrovic@gmail.com",
+    "AdresaStanovanja": "Kragujevac",
+    "Pol": 0,
+    "Username": "mitros",
+    "Password": "mitrovic99"
+  },
+  {
+    "Ime": "Aleksandra",
+    "Prezime": "Petrovic",
+    "Jmbg": 5554567890123,
+    "BrojTelefona": 63123333,
+    "Mejl": "saska@gmail.com",
+    "AdresaStanovanja": "Sombor",
+    "Pol": 1,
+    "Username": "saska",
+    "Password": "petrovic99"
+  }
+]

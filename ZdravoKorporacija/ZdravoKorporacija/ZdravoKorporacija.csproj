@@ -1,0 +1,95 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>output-onlinepngtools.ico</ApplicationIcon>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\damiano.jpg" />
+    <None Remove="Images\exclamation.png" />
+    <None Remove="Images\GettyImages-493928198.jpg" />
+    <None Remove="Images\icons8-active-male-50.png" />
+    <None Remove="Images\icons8-keyboard-40.png" />
+    <None Remove="Images\output-onlinepngtools.png" />
+    <None Remove="Images\pdf.png" />
+    <None Remove="Images\pocetna.png" />
+    <None Remove="Images\profedit.png" />
+    <None Remove="Images\upper.png" />
+    <None Remove="Properties\Resources.resources" />
+    <None Remove="Properties\Resources.sr-LATN.resources" />
+    <None Remove="Stranice\img\loupe.png" />
+    <None Remove="Stranice\LekarCRUD\curve-down-arrow.png" />
+    <None Remove="Stranice\LekarCRUD\loupe.png" />
+    <None Remove="Stranice\Uput\loupe.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AeroWizard" Version="2.2.9" />
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.1.0" />
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+    <PackageReference Include="Microsoft.Extensions.Localization" Version="5.0.7" />
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+    <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+    <PackageReference Include="WPFLocalizeExtension" Version="3.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Jarloo.Calendar\MyCalendar.Calendar.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\exclamation.png" />
+    <Resource Include="Images\icons8-keyboard-40.png" />
+    <Resource Include="Images\output-onlinepngtools.png" />
+    <Resource Include="Images\pdf.png" />
+    <Resource Include="Images\pocetna.png" />
+    <Resource Include="Images\profedit.png" />
+    <Resource Include="Images\upper.png" />
+    <Resource Include="Properties\Resources.resources" />
+    <Resource Include="Properties\Resources.sr-LATN.resources" />
+    <Resource Include="Stranice\img\loupe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Stranice\LekarCRUD\curve-down-arrow.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Stranice\LekarCRUD\loupe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Stranice\Uput\loupe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties data_4termini_1json__JsonSchema="https://bitbucket.org/atlassianlabs/atlascode/raw/main/resources/schemas/pipelines-schema.json" /></VisualStudio></ProjectExtensions>
+
+</Project>

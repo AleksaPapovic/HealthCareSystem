@@ -1,0 +1,52 @@
+﻿<Window x:Class="ZdravoKorporacija.Stranice.StatickaOpremaCRUD.statickaOpremaPremestiIzMagacina"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoKorporacija.Stranice.StatickaOpremaCRUD"
+        mc:Ignorable="d"
+        Title="statickaOpremaPremestiIzMagacina" Height="450" Width="450" Background="CadetBlue">
+    <Grid>
+        <Button Content="Potvrdi&#xD;&#xA;" HorizontalAlignment="Left" Margin="101,291,0,0" VerticalAlignment="Top" Height="26" Width="92" Click="Button_Click"/>
+        <Button Content="Odustani" HorizontalAlignment="Left" Margin="279,291,0,0" VerticalAlignment="Top" Height="26" Width="96" Click="Button_Click_1"/>
+        <Label Content="Prostorija&#xD;&#xA;" HorizontalAlignment="Left" Margin="101,68,0,0" VerticalAlignment="Top" Height="31"/>
+        <Label Content="Datum&#xA;" HorizontalAlignment="Left" Margin="101,130,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.543,2.898" Height="33"/>
+
+        <ComboBox x:Name="cbProstorija" HorizontalAlignment="Left" Margin="196,68,0,0" VerticalAlignment="Top" Width="191" SelectionChanged="cbProstorija_SelectionChanged" Height="26">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock>
+                        <TextBlock.Text>
+                            <MultiBinding StringFormat="{}{0} {1}">
+                                <Binding Path="Id"/>
+                                <Binding Path="Naziv"/>
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <Label Content="Oprema&#xD;&#xA;&#xA;" HorizontalAlignment="Left" Margin="105,21,0,0" VerticalAlignment="Top" Height="33"/>
+        <ComboBox x:Name="cbMagacin" HorizontalAlignment="Left" Margin="196,21,0,0" VerticalAlignment="Top" Width="191" SelectionChanged="cbMagacin_SelectionChanged" Height="25">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock>
+                        <TextBlock.Text>
+                            <MultiBinding StringFormat="{}{0} {1}">
+                                <Binding Path="Id"/>
+                                <Binding Path="Naziv"/>
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <DatePicker Name ="timePicker" HorizontalAlignment="Left" Margin="196,130,0,0" VerticalAlignment="Top" Height="28" SelectedDateChanged="date_changed"/>
+        <ComboBox Name="sati" HorizontalAlignment="Left" Margin="320,131,0,0" VerticalAlignment="Top" Width="67" Height="26" SelectionChanged="sati_SelectionChanged">
+        </ComboBox>
+        <Label Content="Trajanje&#xA;" HorizontalAlignment="Left" Margin="101,191,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.543,2.898" Height="33"/>
+        <TextBox x:Name="textBoxTrajanje" HorizontalAlignment="Left" Margin="196,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" Height="25"/>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,41 @@
+﻿<Window x:Class="ZdravoKorporacija.Stranice.login"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ZdravoKorporacija.Stranice"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800" Background="CadetBlue"
+      Title="login" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" Height="404" Width="780">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Left" FontSize="20" Margin="279,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="27" Width="164">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.071"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform><Run FontWeight="Bold" Text="Korisni"/><Run FontWeight="Bold" Text="čko ime"/><Run FontWeight="Bold" Text=":"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="27" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" Margin="280,165,0,0"/>
+        <TextBlock HorizontalAlignment="Left" FontSize="20" Margin="278,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="24" Width="134">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform><Run FontWeight="Bold" Text="Lozinka:"/></TextBlock>
+        <PasswordBox HorizontalAlignment="Left" Margin="280,231,0,0" VerticalAlignment="Top" Height="26" Width="216"/>
+        <Button Content="Potvrdi" FontWeight="Bold" HorizontalAlignment="Left" Margin="310,286,0,0" VerticalAlignment="Top" Width="158" Height="38" BorderThickness="5" Click="Button_Click" />
+        <Frame x:Name="logovanje" Height="auto" NavigationUIVisibility="Hidden" Width="auto"  Navigated="LOGF_Navigated" Margin="-2,0,10,10" />
+
+    </Grid>
+</Window>

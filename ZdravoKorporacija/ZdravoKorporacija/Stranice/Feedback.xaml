@@ -1,0 +1,26 @@
+﻿<Window x:Class="ZdravoKorporacija.Stranice.Feedback"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoKorporacija.Stranice"
+        mc:Ignorable="d"
+        Title="Feedback" Height="450" Width="800">
+    <Grid>
+        <DataGrid Name="grid" Margin="214,194,179,75">
+            <DataGrid.Columns>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Dodaj" HorizontalAlignment="Left" Margin="586,90,0,0" VerticalAlignment="Top" RenderTransformOrigin="-6.442,0.095" Height="40" Width="80" Click="Button_Click"/>
+        <Button Content="Izbrisi" HorizontalAlignment="Left" Margin="626,217,0,0" VerticalAlignment="Top" RenderTransformOrigin="-6.442,0.095" Height="40" Width="80" Click="Button_Click_1"/>
+        <TextBox Name="sadrzajTB" Text="Vas komentar..." TextWrapping="Wrap" Margin="214,71,374,245"/>
+        <ComboBox Name="ulogaCB" Margin="431,71,234,338">
+            <ComboBoxItem>lekar</ComboBoxItem>
+            <ComboBoxItem>sekretar</ComboBoxItem>
+            <ComboBoxItem>pacijent</ComboBoxItem>
+            <ComboBoxItem>upravnik</ComboBoxItem>
+        </ComboBox>
+        <TextBlock Text="Uloga" TextWrapping="Wrap" Margin="478,46,280,368"/>
+
+    </Grid>
+</Window>

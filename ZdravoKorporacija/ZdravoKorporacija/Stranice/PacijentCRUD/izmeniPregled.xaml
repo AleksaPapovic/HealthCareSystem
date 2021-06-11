@@ -1,0 +1,48 @@
+﻿<Window x:Class="ZdravoKorporacija.Stranice.izmeniPregled"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoKorporacija.Stranice"
+        mc:Ignorable="d"
+        Title="Izmena termina" Height="450" Width="450" Background="CadetBlue" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="59*"/>
+            <ColumnDefinition Width="141*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock  Text="Datum i vreme:" TextWrapping="Wrap" Margin="33,24,0,22" Grid.Row="1"/>
+        <DatePicker Name="date" Grid.Column="1" HorizontalAlignment="Left" Margin="39,20,0,0" Grid.Row="1" VerticalAlignment="Top" Height="28" SelectedDateChanged="dateChanged"/>
+        <ComboBox Name ="time" SelectedValuePath="Content" Grid.Column="1" Margin="168,20,76,24" Grid.Row="1" RenderTransformOrigin="0.507,0.18" SelectionChanged="timeChanged" Height="28" Width="60" IsSynchronizedWithCurrentItem="True" SelectedItem=""/>
+        <TextBlock Text="Lekar:" TextWrapping="Wrap" Margin="33,36,0,10" Grid.Row="2"/>
+        <ComboBox Name ="ljekar"  Grid.Column="1" Margin="40,33,76,15" Grid.Row="2" Height="28">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock>
+                        <TextBlock.Text>
+                            <MultiBinding StringFormat="{}{0} {1}">
+                                <Binding Path="Ime"/>
+                                <Binding Path="Prezime"/>
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <Button Content="POTVRDI" HorizontalAlignment="Left" Margin="0,53,0,0" Grid.Row="4" VerticalAlignment="Top" Width="80" Grid.Column="1" Grid.RowSpan="2" Click="potvrdi"/>
+        <Button Content="ODUSTANI" HorizontalAlignment="Left" Margin="112,53,0,0" Grid.Row="4" VerticalAlignment="Top" Width="80" Grid.Column="1" Grid.RowSpan="2" Click="odustani"/>
+
+
+
+    </Grid>
+</Window>

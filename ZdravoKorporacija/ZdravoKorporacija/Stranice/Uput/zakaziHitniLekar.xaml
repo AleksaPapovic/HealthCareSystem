@@ -1,0 +1,80 @@
+﻿<Page x:Class="ZdravoKorporacija.Stranice.Uput.zakaziHitniLekar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoKorporacija.Stranice.Uput"
+      xmlns:ns="clr-namespace:ZdravoKorporacija"
+        mc:Ignorable="d"
+       Title="Hitni termin" Height="Auto" Width="Auto" Background="{DynamicResource BackgroundColor}">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="408" Width="417">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="59*"/>
+            <ColumnDefinition Width="141*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="{ns:Loc DodajBtn}" HorizontalAlignment="Left" Margin="104,38,0,0" Grid.Row="5" VerticalAlignment="Top" Width="80" Grid.ColumnSpan="2" Click="potvrdi"/>
+        <Button Content="{ns:Loc OdustaniBtn}" HorizontalAlignment="Left" Margin="102,38,0,0" Grid.Row="5" VerticalAlignment="Top" Width="80" Grid.Column="1" Click="odustani"/>
+        <TextBlock Style="{DynamicResource textblock}" Text="{ns:Loc PacijentText}" TextWrapping="Wrap" Margin="72,24,217,24" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <ComboBox Name="cbPacijent" Grid.Column="1" Margin="82,18,53,22" Grid.Row="1" SelectionChanged="ComboBox_SelectionChanged" Height="28">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock >
+                        <TextBlock.Text>
+                            <MultiBinding StringFormat="{}{0} {1}">
+                                <Binding Path="Ime"/>
+                                <Binding Path="Prezime"/>
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <TextBlock Style="{DynamicResource textblock}" Text="{ns:Loc TipText}" TextWrapping="Wrap" Margin="73,35,0,15" RenderTransformOrigin="0.56,-0.389"/>
+        <ComboBox Name="cbTip" Grid.Column="1" Margin="82,30,53,10" Height="28" >
+            <ComboBoxItem>Pregled</ComboBoxItem>
+            <ComboBoxItem>Operacija</ComboBoxItem>
+        </ComboBox>
+        <TextBlock Style="{DynamicResource textblock}" Text="{ns:Loc LekarText}" TextWrapping="Wrap" Margin="73,23,215,16" Grid.Row="3" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="Lekari"  Grid.Column="1" Margin="82,20,53,20" Grid.Row="3" Height="28">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock>
+                        <TextBlock.Text>
+                            <MultiBinding StringFormat="{}{0} {1}">
+                                <Binding Path="Ime"/>
+                                <Binding Path="Prezime"/>
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <TextBlock Style="{DynamicResource textblock}" TextWrapping="Wrap" Margin="72,25,273,20" Grid.Row="2" Text="{ns:Loc ProstorijaText}" Grid.ColumnSpan="2" />
+        <ComboBox x:Name="cbProstorija" Grid.Column="1" Margin="82,20,54,20" Grid.Row="2" Height="28">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock>
+                        <TextBlock.Text>
+                            <MultiBinding StringFormat="{}{0} {1}">
+                                <Binding Path="Id"/>
+                                <Binding Path="Naziv"/>
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+
+
+    </Grid>
+</Page>

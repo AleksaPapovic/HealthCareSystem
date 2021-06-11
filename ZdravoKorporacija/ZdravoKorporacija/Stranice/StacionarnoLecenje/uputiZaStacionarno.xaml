@@ -1,0 +1,36 @@
+﻿<Page x:Class="ZdravoKorporacija.Stranice.StacionarnoLecenje.uputiZaStacionarno"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoKorporacija.Stranice.StacionarnoLecenje"
+      xmlns:ns="clr-namespace:ZdravoKorporacija"
+        mc:Ignorable="d" d:Height="450" d:Width="800"
+        Title="uputiZaStacionarno" Height="Auto" Width="Auto" Background="{DynamicResource BackgroundColor}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="61*"/>
+            <RowDefinition Height="373*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="139*"/>
+            <ColumnDefinition Width="175*"/>
+            <ColumnDefinition Width="138*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid  Style ="{DynamicResource dataGrid}" Name="dgUsers" AutoGenerateColumns="False" CanUserAddRows="False" Height="368" VerticalAlignment="Center" Grid.ColumnSpan="3" Grid.Row="1" Margin="10,0,10,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn HeaderStyle="{DynamicResource dataGridHeader}" Header="ID" Binding="{Binding Id}" Width="*"/>
+                <DataGridTextColumn HeaderStyle="{DynamicResource dataGridHeader}" Header="{ns:Loc PocetakGrid}" Binding="{Binding Pocetak}" Width="*"/>
+                <DataGridTextColumn HeaderStyle="{DynamicResource dataGridHeader}" Header="{ns:Loc TrajanjeGrid}" Binding="{Binding Trajanje}" Width="*"/>
+                <DataGridTextColumn HeaderStyle="{DynamicResource dataGridHeader}" Header="{ns:Loc ProstorijaGrid}" Binding="{Binding Prostorija.Naziv}" Width="*"/>
+
+
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <Button Content="{ns:Loc DodajBtn}" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Height="51" Width="116" Click="Button_Click"/>
+        <Button Content="{ns:Loc IzmeniBtn}" HorizontalAlignment="Center" Margin="0,12,0,0" VerticalAlignment="Top" Height="51" Width="116" Click="Button_Click_1" Grid.Column="1"/>
+        <Button Content="{ns:Loc ObrisiBtn}" HorizontalAlignment="Center" Margin="0,12,0,0" VerticalAlignment="Top" Height="51" Width="116" Click="Button_Click_2" Grid.Column="2"/>
+
+    </Grid>
+</Page>

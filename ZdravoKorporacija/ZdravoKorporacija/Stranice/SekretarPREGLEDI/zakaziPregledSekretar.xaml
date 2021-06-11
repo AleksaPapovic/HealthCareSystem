@@ -1,0 +1,83 @@
+﻿<Window x:Class="ZdravoKorporacija.Stranice.SekretarPREGLEDI.zakaziPregledSekretar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoKorporacija.Stranice.SekretarPREGLEDI"
+        mc:Ignorable="d"
+     
+        Title="Zakazivanje termina" Height="450" Width="450" Background="CadetBlue">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="408" Width="417">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="59*"/>
+            <ColumnDefinition Width="141*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Datum i vreme:" TextWrapping="Wrap" Margin="33,24,0,22" Grid.Row="1"/>
+        <DatePicker Name ="date" Grid.Column="1" HorizontalAlignment="Left" Margin="45,22,0,0" Grid.Row="1" VerticalAlignment="Top" Height="28"/>
+        <Button Content="POTVRDI" HorizontalAlignment="Left" Margin="72,35,0,0" Grid.Row="5" VerticalAlignment="Top" Width="80" Grid.ColumnSpan="2" Click="potvrdi"/>
+        <Button Content="ODUSTANI" HorizontalAlignment="Left" Margin="70,35,0,0" Grid.Row="5" VerticalAlignment="Top" Width="80" Grid.Column="1" Click="odustani"/>
+        <TextBlock Text="Pacijent:" TextWrapping="Wrap" Margin="64,13,225,34" Grid.Row="4" Grid.ColumnSpan="2"/>
+        <ComboBox Name="cbPacijent" Grid.Column="1" Margin="70,10,65,30" Grid.Row="4" SelectionChanged="ComboBox_SelectionChanged" Height="28">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock>
+                        <TextBlock.Text>
+                            <MultiBinding StringFormat="{}{0} {1}">
+                                <Binding Path="Ime"/>
+                                <Binding Path="Prezime"/>
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <TextBlock Text="Lekar:" TextWrapping="Wrap" Margin="65,44,223,63" Grid.Row="3" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <ComboBox Name="Lekari"  Grid.Column="1" Margin="70,41,65,67" Grid.Row="3" Height="28" Grid.RowSpan="2">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock>
+                        <TextBlock.Text>
+                            <MultiBinding StringFormat="{}{0} {1}">
+                                <Binding Path="Ime"/>
+                                <Binding Path="Prezime"/>
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <TextBlock TextWrapping="Wrap" Margin="64,11,229,34" Grid.Row="3" Grid.ColumnSpan="2"><Run Text="Prostorija"/><Run Text=":"/></TextBlock>
+        <ComboBox Name="cbProstorija" Grid.Column="1" Margin="70,4,65,36" Grid.Row="3" Height="28">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock>
+                        <TextBlock.Text>
+                            <MultiBinding StringFormat="{}{0} {1}">
+                                <Binding Path="Id"/>
+                                <Binding Path="Naziv"/>
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <TextBlock Text="Tip:" TextWrapping="Wrap" Margin="65,38,8,12" Grid.Row="2"/>
+        <ComboBox Name="cbTip" Grid.Column="1" Margin="70,35,65,5" Grid.Row="2" Height="28" >
+            <ComboBoxItem>Pregled</ComboBoxItem>
+            <ComboBoxItem>Operacija</ComboBoxItem>
+        </ComboBox>
+        <Button Content="ok" Margin="232,23,0,19" Grid.Column="1" Grid.Row="1" Click="Button_Click"/>
+        <ComboBox x:Name ="time" Grid.Column="1" Margin="159,20,75,20" RenderTransformOrigin="0.507,0.18" Height="28" Width="60" SelectionChanged="time_changed" Grid.Row="1"/>
+
+    </Grid>
+</Window>

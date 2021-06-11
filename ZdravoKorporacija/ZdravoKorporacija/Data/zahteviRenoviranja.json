@@ -1,0 +1,42 @@
+[
+  {
+    "prostorije": [],
+    "Id": 2,
+    "Prostorija": {
+      "inventar": [],
+      "statickaOprema": null,
+      "dinamickaOprema": null,
+      "Id": 3,
+      "Naziv": "soba22",
+      "Tip": 1,
+      "Slobodna": false,
+      "Sprat": 2
+    },
+    "Pocetak": "2021-06-30T10:00:00",
+    "PocetakSati": null,
+    "Kraj": "2021-06-30T10:05:00",
+    "Trajanje": "5",
+    "Spajanje": null,
+    "Razdvajanje": null
+  },
+  {
+    "prostorije": [],
+    "Id": 3,
+    "Prostorija": {
+      "inventar": [],
+      "statickaOprema": null,
+      "dinamickaOprema": null,
+      "Id": 3,
+      "Naziv": "soba22",
+      "Tip": 1,
+      "Slobodna": false,
+      "Sprat": 2
+    },
+    "Pocetak": "2021-06-30T10:00:00",
+    "PocetakSati": null,
+    "Kraj": "2021-06-30T10:05:00",
+    "Trajanje": "5",
+    "Spajanje": null,
+    "Razdvajanje": null
+  }
+]

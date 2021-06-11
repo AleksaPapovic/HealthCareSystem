@@ -1,0 +1,21 @@
+﻿<Window x:Class="ZdravoKorporacija.Stranice.Magacin.MagacinDodavanje"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoKorporacija.Stranice.Magacin"
+        mc:Ignorable="d"
+        Title="Dodavanje u magacin" Height="450" Width="450" Background="CadetBlue">
+    <Grid>
+        <Button Content="Potvrdi&#xD;&#xA;" HorizontalAlignment="Left" Margin="101,291,0,0" VerticalAlignment="Top" Height="26" Width="92" Click="Button_Click"/>
+        <Button Content="Odustani" HorizontalAlignment="Left" Margin="279,291,0,0" VerticalAlignment="Top" Height="26" Width="96" Click="Button_Click_1"/>
+        <TextBox x:Name="textboxNaziv" HorizontalAlignment="Left" Margin="207,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textboxKolicina" HorizontalAlignment="Left" Margin="207,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textboxProizvodjac" HorizontalAlignment="Left" Margin="207,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Naziv" HorizontalAlignment="Left" Margin="101,73,0,0" VerticalAlignment="Top"/>
+        <Label Content="Kolicina" HorizontalAlignment="Left" Margin="101,146,0,0" VerticalAlignment="Top"/>
+        <Label Content="Proizvodjac&#xD;&#xA;" HorizontalAlignment="Left" Margin="95,195,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.543,2.898"/>
+
+
+    </Grid>
+</Window>

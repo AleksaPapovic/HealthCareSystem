@@ -1,0 +1,20 @@
+[
+  {
+    "Kolicina": 150,
+    "Prostorija": {
+      "inventar": [],
+      "statickaOprema": null,
+      "dinamickaOprema": null,
+      "Id": 2,
+      "Naziv": "soba21",
+      "Tip": 1,
+      "Slobodna": false,
+      "Sprat": 2
+    },
+    "Id": 5,
+    "Naziv": "Stolovi",
+    "UkupnaKolicina": 150,
+    "Proizvodjac": "jysk",
+    "DatumNabavke": "0001-01-01T00:00:00"
+  }
+]

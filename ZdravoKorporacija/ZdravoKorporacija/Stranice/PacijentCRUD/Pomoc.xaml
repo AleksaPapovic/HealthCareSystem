@@ -1,0 +1,158 @@
+﻿<Page x:Class="ZdravoKorporacija.Stranice.PacijentCRUD.Pomoc"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ZdravoKorporacija.Stranice.PacijentCRUD"
+      xmlns:calendar="clr-namespace:MyCalendar.Calendar;assembly=MyCalendar.Calendar"
+    mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="630"
+      Title="Pomoć"
+      Background="Transparent">
+
+    <Grid>
+        <TabControl Margin="42,10,34,31"  Background="#354C60B9" BorderBrush="#ff1e243e" Foreground="#ff1e243e" >
+
+            <TabItem Header="Funkcionalnosti" FontSize="24" FontFamily="Corbel" BorderBrush="#ff1e243e"  Background="Transparent">
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition  Height="*"/>
+                        <RowDefinition  Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  Width="*"/>
+                        <ColumnDefinition  Width="*"/>
+                        <ColumnDefinition  Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <GroupBox Header="Pregledi" Grid.Row="0" Grid.ColumnSpan="3" Margin="5,4,5,5" BorderBrush="#FFD84D4D" Foreground="#FFCB4949">
+                        <Grid >
+                            <Grid.RowDefinitions>
+                                <RowDefinition  Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition  Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <FlowDocumentScrollViewer Grid.Row="0" Grid.Column="0" VerticalScrollBarVisibility="Auto" >
+                                <!--<StackPanel >-->
+                                <FlowDocument FontFamily="Corbel" FontSize="17" Foreground="#ff1e243e" >
+                                    <Paragraph>
+                                        <Bold>Zakazivanje pregleda</Bold>
+                                        
+                                    </Paragraph>
+                                    <Paragraph>
+                                        Zakazivanje pregleda se vrši klikom na Zakaži pregled sa početne stranice ili iz sekcije Moji pregledi. Moguće je zakazati pregled po prioritetu: lekaru ili terminu pregleda.
+                                    </Paragraph>
+
+                                    <Paragraph>
+                                        <Bold>Pomeranje termina i otkazivanje pregleda</Bold> 
+                                    </Paragraph>
+                                    <Paragraph>
+                                        Ukoliko želite da pomerite termin pregleda, to je moguće uraditi izborom željenog pregleda iz tabele pregleda i klikom na Pomeri pregled. Novi termin može biti u opsegu 3 dana od inicijalnog termina pregleda. Pri izboru novog termina, moguće je promeniti i lekara (ukoliko inicijalno izabrani lekar nije slobodan).
+                                    </Paragraph>
+                                    <Paragraph>
+                                        Funkcionalnost otkazivanja pregleda vrši se selektovanjem željenog pregleda i klikom na Otkaži pregled.
+                                    </Paragraph>
+
+
+                                </FlowDocument>
+                                <!-- </StackPanel>-->
+
+                            </FlowDocumentScrollViewer>
+                        </Grid>
+                    </GroupBox>
+
+                    <GroupBox Grid.Column="1" Grid.Row="1" Header="Zdravstveni karton" Margin="5,4,5,5" BorderBrush="#FFD84D4D" Foreground="#FFCB4949">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition  Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition  Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <FlowDocumentScrollViewer Grid.Row="0" Grid.Column="0" VerticalScrollBarVisibility="Auto" >
+                                <FlowDocument FontFamily="Corbel" FontSize="17" Foreground="#ff1e243e" >
+                                    <Paragraph>
+                                        U sekciji Zdravstveni karton možete odabrati 3 različita taba: Lični podaci, Istorija bolesti i Alergije.
+                                    </Paragraph>
+                                    <Paragraph>
+                                        Istorija bolesti sadrži tabelarni prikaz istorije termina uz pregled anamneze i postavljene dijagnoze.
+                                    </Paragraph>
+                                    <Paragraph>
+                                        Tab Alergije nudi prikaz alergena, praćen opisom simptoma i reakcije za svaki od alergena.
+                                    </Paragraph>
+                                </FlowDocument>
+                            </FlowDocumentScrollViewer>
+                        </Grid>
+                    </GroupBox>
+
+                    <GroupBox Header="Terapija" Foreground="#FFCB4949" Grid.Column="0" Grid.Row="1" Margin="5,4,5,5" BorderBrush="#ffd84d4d">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition  Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition  Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <FlowDocumentScrollViewer Grid.Row="0" Grid.Column="0" VerticalScrollBarVisibility="Auto" >
+                                <FlowDocument FontFamily="Corbel" FontSize="17" Foreground="#ff1e243e">
+                                   
+                                    <Paragraph>
+                                        U sekciji Terapija možete pronaći kaledar koji nudi hronološki prikaz toka terapija, kao i lijekova koji su korišćeni. 
+                                    </Paragraph>
+
+                                    <Paragraph>
+                                        Klikom na "Generiši PDF izveštaj" možete preuzeti kalendarski izveštaj o uzimanju terapije za mesec i godinu koju izaberete u PDF formatu.
+                                    </Paragraph>
+                                   
+
+                                </FlowDocument>
+                            </FlowDocumentScrollViewer>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Grid.Column="2" Header="Obaveštenja" Grid.Row="1" Margin="5,4,5,5" BorderBrush="#FFD84D4D" Foreground="#FFCB4949">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition  Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition  Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <FlowDocumentScrollViewer Grid.Row="0" Grid.Column="0" VerticalScrollBarVisibility="Auto" >
+                                <FlowDocument FontFamily="Corbel" FontSize="17" Foreground="#ff1e243e">
+                                    <Paragraph>
+                                        Sekcija Obaveštenja prikazuje tabelu u kojoj se mogu naći obaveštenja vezana za zakazane termine, terapiju, novosti o Zdravo korporaciji, ali i ručno napravljeni podsetnici i beleške. 
+                                    </Paragraph>
+
+                                </FlowDocument>
+                            </FlowDocumentScrollViewer>
+                        </Grid>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Prečice" FontSize="24" FontFamily="Corbel" BorderBrush="#ff1e243e" Background="Transparent">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition  Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <FlowDocumentScrollViewer Grid.Row="0" Grid.Column="0" VerticalScrollBarVisibility="Auto" >
+                        <FlowDocument FontFamily="Corbel" FontSize="17" Foreground="#ff1e243e">
+                            <Paragraph>
+                                Sve prečice su zasnovane na šablonu ALT + [X], gde je X početno slovo prve reči funkcionalnosti koju želite da inicirate.
+                            </Paragraph>
+                            <Paragraph>
+                                U slučaju da postoji više reči koje počinju na isto slovo, kretanjem strelicama desno/levo možete da označite koju tačno funkcionalnost želite da pokrenete.
+                            </Paragraph>
+                            <Paragraph>
+                                Pored navedenog, u sekcijama koje imaju tabove, kroz tabove se moguće kretati uz pomoć prečica CTRL + TAB za sledeći, odnosno CTRL + SHIFT + TAB za prethodni tab. 
+                            </Paragraph>
+                        </FlowDocument>
+                    </FlowDocumentScrollViewer>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Page>

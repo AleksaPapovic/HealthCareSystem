@@ -1,0 +1,99 @@
+﻿<Window x:Class="ZdravoKorporacija.Stranice.PacijentCRUD.Zakazi"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoKorporacija.Stranice.PacijentCRUD"
+        mc:Ignorable="d"
+        Title="Zdravo korporacija" Height="450" Width="400"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="#784c60b9">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="41*"/>
+            <ColumnDefinition Width="98*"/>
+            <ColumnDefinition Width="221*"/>
+            <ColumnDefinition Width="40*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Zakaži pregled" FontWeight="Bold" Grid.Row="1" Grid.ColumnSpan="2" FontSize="28" Grid.Column="1" HorizontalAlignment="Center" Margin="49,6,57,5" Width="200" Height="55" FontFamily="Corbel" Foreground="#FF1E243E"/>
+        <TextBlock Text="Prioritet:" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" FontSize="18" Margin="10,14,0,21" FontFamily="Corbel" Foreground="#FF1E243E"/>
+        <TextBlock Text="Datum:" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" FontSize="18" Margin="10,4,0,14" FontFamily="Corbel" Foreground="#FF1E243E"/>
+        <TextBlock Text="Vreme:" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Left" FontSize="18" Margin="10,0,0,20" FontFamily="Corbel" Foreground="#FF1E243E"/>
+        <TextBlock Text="Lekar:" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Left" FontSize="18" Margin="10,0,0,20" FontFamily="Corbel" Foreground="#FF1E243E"/>
+
+        <RadioButton Content="Lekar" Grid.Row="3" Grid.Column="2" Margin="15,19,116,21" Checked="LekarChecked" FontFamily="Corbel" RenderTransformOrigin="0.5,0.5" Foreground="#FF1E243E" >
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1.35" ScaleY="1.35"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton Content="Vreme" Grid.Row="3" Grid.Column="2" Margin="106,19,46,21" Checked="VremeChecked" FontFamily="Corbel" RenderTransformOrigin="0.5,0.5" Foreground="#FF1E243E" >
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1.4" ScaleY="1.4"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="1" Y="1"/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <DatePicker HorizontalContentAlignment="Stretch" VerticalContentAlignment="Center" x:Name ="date" Grid.Row="3" Grid.Column="1" Margin="97,54,82,32"  SelectedDateChanged="date_changed" FontFamily="Corbel" Foreground="#FF1E243E" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <DatePicker.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1.3" ScaleY="1.3"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </DatePicker.RenderTransform>
+        </DatePicker>
+        <ComboBox HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="time" Grid.Row="5" Grid.Column="2" Margin="0,0,40,28" SelectionChanged="time_changed" FontFamily="Corbel" FontSize="16" Foreground="#FF1E243E">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="Transparent" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+        <ComboBox HorizontalContentAlignment="Left" VerticalContentAlignment="Center" x:Name="ljekar" Grid.Row="6" Grid.Column="2" Margin="0,0,40,28" SelectionChanged="ljekar_changed" FontFamily="Corbel" FontSize="16" Foreground="#FF1E243E">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="Transparent" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock>
+                        <TextBlock.Text>
+                            <MultiBinding StringFormat="{}{0} {1}">
+                                <Binding Path="Ime"/>
+                                <Binding Path="Prezime"/>
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <TextBlock  x:Name ="tbDate" HorizontalAlignment="Left" VerticalAlignment="center" Grid.Row="4" Grid.Column="2" Margin="0,30,10,0" TextAlignment="Left" Foreground="#FFB01E29"  FontSize="13" Background="Transparent"  FontFamily="Corbel"  />
+        <TextBlock x:Name="tbTime" HorizontalAlignment="Left" VerticalAlignment="center" Grid.Row="5" Grid.Column="2" Margin="0,30,0,58" TextAlignment="Left" Foreground="#FFB01E29"  FontSize="13" Background="Transparent" FontFamily="Corbel"  TextWrapping="Wrap" Grid.RowSpan="2"/>
+        <TextBlock x:Name="tbLjekar" HorizontalAlignment="Left" VerticalAlignment="center"  Grid.Row="6" Grid.Column="2" Margin="0,30,10,0"  TextAlignment="Left" Foreground="#FFB01E29"  FontSize="13" Background="Transparent" FontFamily="Corbel" TextWrapping="Wrap"/>
+        <Button Content="Odustani" FontWeight="Bold" Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="2" Margin="32,8,173,9" Click="odustani" BorderBrush="#FF1E243E" FontFamily="Corbel" FontSize="18" Background="#CCD84D4D" Foreground="#FF1E243E"/>
+        <Button Content="Potvrdi" FontWeight="Bold" x:Name="btnPotvrdi" Grid.Row="8" Grid.Column="2" IsEnabled="False" Margin="69,8,38,9" Click="potvrdi" BorderBrush="#FF1E243E" FontFamily="Corbel"  FontSize="18" Background="#CCD84D4D" Foreground="#FF1E243E"/>
+    </Grid>
+</Window>

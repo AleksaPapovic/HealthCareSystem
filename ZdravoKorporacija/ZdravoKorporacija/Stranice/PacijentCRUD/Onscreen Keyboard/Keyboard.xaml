@@ -1,0 +1,144 @@
+﻿<Window x:Class="ZdravoKorporacija.Stranice.PacijentCRUD.Onscreen_Keyboard.Keyboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoKorporacija.Stranice.PacijentCRUD.Onscreen_Keyboard"
+        mc:Ignorable="d" 
+        Title="Keyboard" WindowStyle="None" Height="200" Width="333" MouseDown="Window_MouseDown" >
+    <Grid Margin="0,1,10,-1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="267*"/>
+            <ColumnDefinition Width="44*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Q" HorizontalAlignment="Left" Margin="5,52,0,0" VerticalAlignment="Top" Width="30" Height="31" Background="White" Click="Q_Click">
+            <Label Content="Q" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="W" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="35,52,0,0" Click="W_Click">
+            <Label Content="W" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="E" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="65,52,0,0" Click="E_Click">
+            <Label Content="E" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="R" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="95,52,0,0" Click="R_Click">
+            <Label Content="R" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="T" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="125,52,0,0" Click="T_Click">
+            <Label Content="T" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="Z" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="155,52,0,0" Click="Z_Click">
+            <Label Content="Z" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="U" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="185,52,0,0" Click="U_Click">
+            <Label Content="U" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="I" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="215,52,0,0" Click="I_Click">
+            <Label Content="I" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="O" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="245,52,0,0"  Click ="O_Click" Grid.ColumnSpan="2">
+            <Label Content="O" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="P" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="8.367,52,0,0" Click="P_Click" Grid.Column="1">
+            <Label Content="P" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="A" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="20,82,0,0" Click="A_Click">
+            <Label Content="A" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="S" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="50,82,0,0" Click="S_Click">
+            <Label Content="S" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="D" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="80,82,0,0" Click="D_Click">
+            <Label Content="D" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="F" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="110,82,0,0" Click="F_Click">
+            <Label Content="F" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="G" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="140,82,0,0" Click="G_Click">
+            <Label Content="G" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="H" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="170,82,0,0" Click="H_Click">
+            <Label Content="H" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="J" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="200,82,0,0" Click="J_Click">
+            <Label Content="J" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="K" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="230,82,0,0" Click="K_Click">
+            <Label Content="K" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="L" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="260,82,0,0" Click="L_Click" Grid.ColumnSpan="2">
+            <Label Content="L" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="Y" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="50,112,0,0" Click="Y_Click">
+            <Label Content="Y" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="X" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="80,112,0,0" Click="X_Click">
+            <Label Content="X" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="C" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="110,112,0,0" Click="C_Click">
+            <Label Content="C" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="V" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="140,112,0,0" Click="V_Click">
+            <Label Content="V" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="B" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="170,112,0,0" Click="B_Click">
+            <Label Content="B" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="N" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="200,112,0,0" Click="N_Click">
+            <Label Content="N" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="M" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="230,112,0,0" Click="M_Click">
+            <Label Content="M" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button x:Name="Shift" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="30" Background="CornflowerBlue" Margin="6,112,0,0" Click="Shift_Click">
+            <Label Content="🠕" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="30" Background="White" Margin="260,112,0,0" Click="Back_Click"  Grid.ColumnSpan="2">
+            <Label Content="⇦" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="Space" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="30" Background="White" Margin="80,142,0,0" Click="Space_Click">
+            <Label FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="Comma" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="50,142,0,0" Click="Comma_Click">
+            <Label Content="," FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="Dot" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="230,142,0,0" Click="Dot_Click">
+            <Label Content="." FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="SpecialSigns" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="30" Background="White" Margin="6,142,0,0" Click="SpecialSigns_Click">
+            <Label Content="!#" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="Enter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="30" Background="White" Margin="260,142,0,0" Click="Enter_Click" Grid.ColumnSpan="2">
+            <Label Content="⎆" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="b1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="5,24,0,0" Click="b1_Click">
+            <Label Content="1" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="b2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="35,24,0,0" Click="b2_Click">
+            <Label Content="2" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="b3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="65,24,0,0" Click="b3_Click">
+            <Label Content="3" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="b4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="95,24,0,0" Click="b4_Click">
+            <Label Content="4" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="b5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="125,24,0,0" Click="b5_Click">
+            <Label Content="5" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="b6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="155,24,0,0" Click="b6_Click">
+            <Label Content="6" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="b7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="185,24,0,0" Click="b7_Click">
+            <Label Content="7" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="b8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="215,24,0,0" Click="b8_Click">
+            <Label Content="8" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="b9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="245,24,0,0" Click="b9_Click" Grid.ColumnSpan="2">
+            <Label Content="9" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+        <Button  x:Name="b0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Height="30" Background="White" Margin="8.367,24,0,0" Click="b0_Click" Grid.Column="1">
+            <Label Content="0" FontSize="16" Foreground="Black" Height="35"/>
+        </Button>
+    </Grid>
+</Window>

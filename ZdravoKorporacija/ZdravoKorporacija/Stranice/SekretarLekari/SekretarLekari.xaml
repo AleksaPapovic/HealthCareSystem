@@ -1,0 +1,59 @@
+﻿<Page x:Class="ZdravoKorporacija.Stranice.SekretarLekari.SekretarLekari"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ZdravoKorporacija.Stranice.SekretarLekari"
+      mc:Ignorable="d" 
+      Height="350" Width="800" Background="CadetBlue"
+      Title="Sekretar">
+
+    <Grid>
+        <Button Content="Dodaj Lekara" HorizontalAlignment="Left" Margin="217,10,0,0" VerticalAlignment="Top" Width="92" Height="44" Click="kreiraj"/>
+        <Button Content="Izmeni Lekara" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="92" Height="44" RenderTransformOrigin="0.255,-0.75" Click="izmeni"/>
+        <Button Content="Obriši Lekara" HorizontalAlignment="Left" Margin="486,10,0,0" VerticalAlignment="Top" Width="92" Height="44" RenderTransformOrigin="0.033,-1.977" Click="izbrisi"/>
+        <Grid Margin="10,-31,0,67">
+            <DataGrid Name="dgUsers" AutoGenerateColumns="False" Margin="111,115,111,-45">
+
+                <DataGrid.Columns>
+
+                    <DataGridTextColumn Header="Ime" Binding="{Binding Ime}"/>
+                    <DataGridTextColumn Header="Prezime" Binding="{Binding Prezime}" />
+                    <DataGridTextColumn Header="Pol" Binding="{Binding Pol}"/>
+                    <DataGridTextColumn Header="Telefon" Binding="{Binding BrojTelefona}"/>
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Click="radniDani">Pogledaj radne dane</Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Click="slobodniDani">Dodaj slobodne dane</Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Click="smene">Promeni smenu</Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    
+                </DataGrid.Columns>
+                <DataGrid.RowDetailsTemplate>
+                    <DataTemplate>
+
+                        <TextBlock Text="{Binding Mejl}" Margin="10" />
+
+                    </DataTemplate>
+                </DataGrid.RowDetailsTemplate>
+            </DataGrid>
+        </Grid>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="1078,54,0,0" VerticalAlignment="Top" Width="0"/>
+        <Frame x:Name="fr" NavigationUIVisibility="hidden" Margin="-81,10,91,10" />
+    </Grid>
+</Page>

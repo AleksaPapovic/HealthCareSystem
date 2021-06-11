@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AlergijeText" xml:space="preserve">
+    <value>Alergije:</value>
+  </data>
+  <data name="AlternativniBtn" xml:space="preserve">
+    <value>_Izaberi Alternativu:</value>
+  </data>
+  <data name="AlternativniGrid" xml:space="preserve">
+    <value>Alternative</value>
+  </data>
+  <data name="AlternativniText" xml:space="preserve">
+    <value>Alternative:</value>
+  </data>
+  <data name="BrojTelefonaText" xml:space="preserve">
+    <value>Broj Telefona:</value>
+  </data>
+  <data name="DaBtn" xml:space="preserve">
+    <value>_Da</value>
+  </data>
+  <data name="DateText" xml:space="preserve">
+    <value>Izabari Datum</value>
+  </data>
+  <data name="DatumGrid" xml:space="preserve">
+    <value>Datum</value>
+  </data>
+  <data name="DatumIVremeText" xml:space="preserve">
+    <value>Datum i Vreme:</value>
+  </data>
+  <data name="DnevnaDozaText" xml:space="preserve">
+    <value>Dnevna doza:</value>
+  </data>
+  <data name="DodajAnamnezuBtn" xml:space="preserve">
+    <value>_Izdaj Anamnezu</value>
+  </data>
+  <data name="DodajBtn" xml:space="preserve">
+    <value>Dodaj</value>
+  </data>
+  <data name="DozaGrid" xml:space="preserve">
+    <value>Doza</value>
+  </data>
+  <data name="HitnoGrid" xml:space="preserve">
+    <value>Hitno</value>
+  </data>
+  <data name="ImeGrid" xml:space="preserve">
+    <value>Ime</value>
+  </data>
+  <data name="ImeText" xml:space="preserve">
+    <value>Ime:</value>
+  </data>
+  <data name="IzaberiDatumText" xml:space="preserve">
+    <value>Izaberi Datum:</value>
+  </data>
+  <data name="IzbrisiAnamnezuBtn" xml:space="preserve">
+    <value>_Izbrisi Anamnezu</value>
+  </data>
+  <data name="IzbrisiZahtevBtn" xml:space="preserve">
+    <value>_Izbrisi Uput</value>
+  </data>
+  <data name="IzdajReceptBtn" xml:space="preserve">
+    <value>_Izdaj Recept</value>
+  </data>
+  <data name="IzdajUputBtn" xml:space="preserve">
+    <value>_Izdaj Uput</value>
+  </data>
+  <data name="IzmeniBtn" xml:space="preserve">
+    <value>_Izmeni</value>
+  </data>
+  <data name="IzmeniTerminBtn" xml:space="preserve">
+    <value>_Izmeni Termin</value>
+  </data>
+  <data name="IzmeniUputBtn" xml:space="preserve">
+    <value>_Izmeni Uput</value>
+  </data>
+  <data name="IzmeniZahtevBtn" xml:space="preserve">
+    <value>_Izmeni Zahtev</value>
+  </data>
+  <data name="IzvestajiBtn" xml:space="preserve">
+    <value>_Izvestaj</value>
+  </data>
+  <data name="JezikMenu" xml:space="preserve">
+    <value>_Izmenii Jezik</value>
+  </data>
+  <data name="JMBGGrid" xml:space="preserve">
+    <value>JMBG</value>
+  </data>
+  <data name="JMBGText" xml:space="preserve">
+    <value>JMBG:</value>
+  </data>
+  <data name="KorisnickoImeText" xml:space="preserve">
+    <value>Korisnicko Ime:</value>
+  </data>
+  <data name="KrvnaGrupaText" xml:space="preserve">
+    <value>Krvna Grupa:</value>
+  </data>
+  <data name="LekariBtn" xml:space="preserve">
+    <value>_Izaberi Lekare</value>
+  </data>
+  <data name="LekarText" xml:space="preserve">
+    <value>Lekar:</value>
+  </data>
+  <data name="LekGrid" xml:space="preserve">
+    <value>Lek</value>
+  </data>
+  <data name="LozinkaText" xml:space="preserve">
+    <value>Sifra:</value>
+  </data>
+  <data name="NazivGrid" xml:space="preserve">
+    <value>Naziv Leka</value>
+  </data>
+  <data name="NazivLekaText" xml:space="preserve">
+    <value>Naziv Leka:</value>
+  </data>
+  <data name="NeBtn" xml:space="preserve">
+    <value>_Ne</value>
+  </data>
+  <data name="NeophodneBtn" xml:space="preserve">
+    <value>Broj Neophodnih Potvrda:</value>
+  </data>
+  <data name="NeophodneGrid" xml:space="preserve">
+    <value>Broj Neophodnih Potvrda</value>
+  </data>
+  <data name="NoviLekText" xml:space="preserve">
+    <value>Novi Lek:</value>
+  </data>
+  <data name="NusPojaveText" xml:space="preserve">
+    <value>Nus Pojave:</value>
+  </data>
+  <data name="ObrisiBtn" xml:space="preserve">
+    <value>_Obrisi</value>
+  </data>
+  <data name="ObrisiReceptBtn" xml:space="preserve">
+    <value>_Obrisi Recept</value>
+  </data>
+  <data name="ObrisiUputBtn" xml:space="preserve">
+    <value>_Obrisi Uput</value>
+  </data>
+  <data name="ObrisiZahtevDialog" xml:space="preserve">
+    <value>Da li ste sigurni da zelite da obrisete zahtev?</value>
+  </data>
+  <data name="OdjaviSeMenu" xml:space="preserve">
+    <value>_Odjavi Se</value>
+  </data>
+  <data name="OdjaviSeToolTip" xml:space="preserve">
+    <value>AlT+O</value>
+  </data>
+  <data name="OdobriZahtevBtn" xml:space="preserve">
+    <value>_Odobri Zahtev</value>
+  </data>
+  <data name="OdustaniBtn" xml:space="preserve">
+    <value>_Odustani</value>
+  </data>
+  <data name="OpisGrid" xml:space="preserve">
+    <value>Opis</value>
+  </data>
+  <data name="OpisText" xml:space="preserve">
+    <value>Opis:</value>
+  </data>
+  <data name="OsnovniPodaciText" xml:space="preserve">
+    <value>Osnovni Podaci:</value>
+  </data>
+  <data name="OtkaziTerminBtn" xml:space="preserve">
+    <value>_Otkazi Termin</value>
+  </data>
+  <data name="OtkaziTerminDialog" xml:space="preserve">
+    <value>Da li ste sigurni da zelite da otkazete termin?</value>
+  </data>
+  <data name="OtkaziUputDialog" xml:space="preserve">
+    <value>Da li ste sigurni da zelite da otkazete uput?</value>
+  </data>
+  <data name="PacijentiMenu" xml:space="preserve">
+    <value>_Lista Pacijenata</value>
+  </data>
+  <data name="PacijentiToolTip" xml:space="preserve">
+    <value>ALT+L</value>
+  </data>
+  <data name="PacijentText" xml:space="preserve">
+    <value>Pacijent:</value>
+  </data>
+  <data name="PocetakGrid" xml:space="preserve">
+    <value>Pocetak</value>
+  </data>
+  <data name="PocetakTerapijeText" xml:space="preserve">
+    <value>Pocetak Terapije:</value>
+  </data>
+  <data name="PocetakText" xml:space="preserve">
+    <value>Pocetak:</value>
+  </data>
+  <data name="PodesavanjaMenu" xml:space="preserve">
+    <value>_Podesavanja</value>
+  </data>
+  <data name="PodesavanjaToolTip" xml:space="preserve">
+    <value>ALT+P</value>
+  </data>
+  <data name="PolGrid" xml:space="preserve">
+    <value>Pol</value>
+  </data>
+  <data name="PolText" xml:space="preserve">
+    <value>Pol:</value>
+  </data>
+  <data name="PotvrdiBtn" xml:space="preserve">
+    <value>_Potvrdi</value>
+  </data>
+  <data name="PotvrdiloGrid" xml:space="preserve">
+    <value>Potvrdilo</value>
+  </data>
+  <data name="PrezimeGrid" xml:space="preserve">
+    <value>Prezime</value>
+  </data>
+  <data name="PrezimeText" xml:space="preserve">
+    <value>Prezime:</value>
+  </data>
+  <data name="ProizvodjacGrid" xml:space="preserve">
+    <value>Proizvodjac</value>
+  </data>
+  <data name="ProizvodjacText" xml:space="preserve">
+    <value>Proizvodjac:</value>
+  </data>
+  <data name="ProstorijaGrid" xml:space="preserve">
+    <value>Prostorija</value>
+  </data>
+  <data name="ProstorijaText" xml:space="preserve">
+    <value>Prostorija:</value>
+  </data>
+  <data name="SastojciText" xml:space="preserve">
+    <value>Sastojci:</value>
+  </data>
+  <data name="SimptomiGrid" xml:space="preserve">
+    <value>Simptomi</value>
+  </data>
+  <data name="SimptomiText" xml:space="preserve">
+    <value>Simptomi:</value>
+  </data>
+  <data name="TemaMenu" xml:space="preserve">
+    <value>_Tamna Tema</value>
+  </data>
+  <data name="TerminiMenu" xml:space="preserve">
+    <value>_Termini</value>
+  </data>
+  <data name="TerminiToolTip" xml:space="preserve">
+    <value>ALT+T</value>
+  </data>
+  <data name="TipGrid" xml:space="preserve">
+    <value>Tip</value>
+  </data>
+  <data name="TipText" xml:space="preserve">
+    <value>Tip:</value>
+  </data>
+  <data name="TrajanjeGrid" xml:space="preserve">
+    <value>Trajanje</value>
+  </data>
+  <data name="TrajanjeText" xml:space="preserve">
+    <value>Trajanje(u danima):</value>
+  </data>
+  <data name="UputiMenu" xml:space="preserve">
+    <value>_Uputi</value>
+  </data>
+  <data name="UputiToolTip" xml:space="preserve">
+    <value>ALT+U</value>
+  </data>
+  <data name="UputiZaStacionarnoGrid" xml:space="preserve">
+    <value>Uputi za Stacionarno Lecenje</value>
+  </data>
+  <data name="ZahteviToolTip" xml:space="preserve">
+    <value>ALT+Z</value>
+  </data>
+  <data name="ZahteviZaLekoveMenu" xml:space="preserve">
+    <value>_Zahtevi za Lekove</value>
+  </data>
+  <data name="ZakaziHitniBtn" xml:space="preserve">
+    <value>_Zakazi Hitnu Operaciju</value>
+  </data>
+  <data name="ZakaziTerminBtn" xml:space="preserve">
+    <value>_Zakazi Termin</value>
+  </data>
+  <data name="ZdravoKorporacijaMenu" xml:space="preserve">
+    <value>Zdravo Korporacija</value>
+  </data>
+  <data name="ZdravstveniKartonBtn" xml:space="preserve">
+    <value>Zdravstveni Karton</value>
+  </data>
+  <data name="ZdravstveniKartonGrid" xml:space="preserve">
+    <value>Zdravstveni Karton</value>
+  </data>
+</root>

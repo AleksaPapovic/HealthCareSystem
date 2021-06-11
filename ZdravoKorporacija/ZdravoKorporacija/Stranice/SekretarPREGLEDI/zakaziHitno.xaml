@@ -1,0 +1,65 @@
+﻿<Window x:Class="ZdravoKorporacija.Stranice.SekretarPREGLEDI.zakaziHitno"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoKorporacija.Stranice.SekretarPREGLEDI"
+       mc:Ignorable="d"
+     
+        Title="Zakazivanje termina" Height="450" Width="450" Background="CadetBlue">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="408" Width="417">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="59*"/>
+            <ColumnDefinition Width="141*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="POTVRDI" HorizontalAlignment="Left" Margin="72,35,0,0" Grid.Row="5" VerticalAlignment="Top" Width="80" Grid.ColumnSpan="2" Click="potvrdi"/>
+        <Button Content="ODUSTANI" HorizontalAlignment="Left" Margin="70,35,0,0" Grid.Row="5" VerticalAlignment="Top" Width="80" Grid.Column="1" Click="odustani"/>
+        <TextBlock Text="Pacijent:" TextWrapping="Wrap" Margin="72,37,217,10" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <ComboBox Name="cbPacijent" Grid.Column="1" Margin="82,32,53,8" Grid.Row="1" SelectionChanged="ComboBox_SelectionChanged" Height="28">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock>
+                        <TextBlock.Text>
+                            <MultiBinding StringFormat="{}{0} {1}">
+                                <Binding Path="Ime"/>
+                                <Binding Path="Prezime"/>
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <TextBlock Text="Tip:" TextWrapping="Wrap" Margin="79,52,288,66" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <ComboBox Name="cbTip" Grid.Column="1" Margin="82,48,53,60" Height="28" Grid.RowSpan="2" >
+            <ComboBoxItem>Pregled</ComboBoxItem>
+            <ComboBoxItem>Operacija</ComboBoxItem>
+        </ComboBox>
+        <DataGrid Visibility="Hidden" AutoGenerateColumns="False" Name="alternative" Grid.ColumnSpan="2" Margin="62,44,53,34" Grid.RowSpan="3" Grid.Row="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Vreme" Binding="{Binding Pocetak}" ></DataGridTextColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Click="zameni">Zameni pacijenta</Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <TextBlock Text="Specijalizacija:" TextWrapping="Wrap" Margin="72,16,217,30" Grid.Row="2" Grid.ColumnSpan="2"/>
+        <RadioButton Name="kardioRB" Content="Kardiohirurg" Margin="90,21,101,24" Grid.Column="1" Grid.Row="2" Checked="RadioButton_Checked"/>
+        <RadioButton Name="neuroKB" Content="Neurolog" Margin="90,56,101,56" Grid.Column="1" Grid.Row="2" Grid.RowSpan="2" Checked="RadioButton_Checked_1"/>
+
+    </Grid>
+</Window>

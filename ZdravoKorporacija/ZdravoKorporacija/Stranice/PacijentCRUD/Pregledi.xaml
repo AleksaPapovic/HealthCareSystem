@@ -1,0 +1,101 @@
+﻿<Page x:Class="ZdravoKorporacija.Stranice.PacijentCRUD.Pregledi"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ZdravoKorporacija.Stranice.PacijentCRUD"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="630"
+      Title="Pregledi">
+
+    <!--<Page.Resources>
+        -->
+    <!-- DataGrid style -->
+    <!--
+        <Style x:Key="DataGridStyle1" TargetType="{x:Type DataGrid}">
+            <Setter Property="ColumnHeaderStyle" Value="{DynamicResource ColumnHeaderStyle1}"/>
+        </Style>
+        -->
+    <!-- DataGridColumnHeader style -->
+    <!--
+        <Style x:Key="ColumnHeaderStyle1" TargetType="DataGridColumnHeader">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="Height" Value="30" />
+        </Style>
+    </Page.Resources>-->
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="90*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="34*"/>
+            <ColumnDefinition Width="11*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="dgTermini" Margin="26,0,22,40" Grid.RowSpan="5" Grid.Column="0" Grid.Row="1" FontFamily="Corbel" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" AutoGenerateColumns="False" RowHeaderWidth="0" CanUserAddRows="False" FontSize="20"  SelectionMode="Single" Background="Transparent" BorderBrush="#FF1E243E" Foreground="#FF121523" CanUserDeleteRows="False" CanUserResizeRows="False" MinRowHeight="20" GridLinesVisibility="None" AreRowDetailsFrozen="True" RowDetailsVisibilityMode="Visible" RowHeight = "35" >
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Datum i vreme" Binding="{Binding Pocetak, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="*"/>
+                <DataGridTextColumn Header="Trajanje" Binding="{Binding Trajanje,  Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="*"/>
+                <DataGridTextColumn Header="Lekar" Width="*">
+                    <DataGridTextColumn.Binding>
+                        <MultiBinding StringFormat="{}{0} {1}">
+                            <Binding Path="Lekar.Ime" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged"/>
+                            <Binding Path="Lekar.Prezime" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged"/>
+                        </MultiBinding>
+                    </DataGridTextColumn.Binding>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Tip" Binding="{Binding Tip, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="*"/>
+                <!--<DataGridTemplateColumn Header="Anamneza" Width="Auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Name="anamnezaBtn" Content="Pogledaj anamnezu" Click="AnamnezaBtn_OnClick"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>-->
+            </DataGrid.Columns>
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <Setter Property="TextBlock.TextAlignment" Value="Left"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type DataGridCell}">
+                                <Grid Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"/>
+                                </Grid>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </DataGrid.CellStyle>
+            <DataGrid.Resources>
+                <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" 
+                   Color="#AAD84D4D"/>
+                <Style TargetType="{x:Type DataGridCell}">
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="#CCDAFF" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+                <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="#FF1E243E" />
+                    <Setter Property="Foreground" Value="#FFFFFFFF" />
+                    <Setter Property="FontSize" Value="25"/>
+                    <Setter Property="Height" Value="50"/>
+                </Style>
+            </DataGrid.Resources>
+        </DataGrid>
+        <Button x:Name="zakaziBtn"  Content="_Zakaži pregled"  FontSize="22" Margin="10,0,14,47" Grid.Column="1" Grid.Row="1" Click="ZakaziPregledClick" MinHeight="30" Background="#EED84D4D" BorderBrush="#FF1E243E" Foreground="White" FontFamily="Corbel" FontWeight="Bold" Width="180" Height="60"/>
+        <Button x:Name="izmeniBtn" Grid.Row="3" Content="_Izmeni pregled"  FontSize="20" Margin="10,0,14,47" Grid.Column="1" Click="IzmeniPregledClick" MinHeight="30" Background="#eeD84D4D" BorderBrush="#FF1E243E" Foreground="White" FontFamily="Corbel" FontWeight="Normal" Width="180" Height="60"/>
+        <Button x:Name="otkaziBtn" Grid.Row="4" Content="_Otkaži pregled"  FontSize="20" Margin="10,0,14,47" Grid.Column="1" Click="OtkaziPregledClick" MinHeight="30" Background="#EED84D4D" BorderBrush="#FF1E243E" Foreground="White" FontFamily="Corbel" FontWeight="Normal" Width="180" Height="60"/>
+        <Button x:Name="oceniTerminBtn" Grid.Row="5" Content="_Oceni pregled" FontSize="20" Grid.Column="1" Margin="10,0,14,47" Click="oceniTerminBtn_Click" MinHeight="30" Background="#EED84D4D" BorderBrush="#FF1E243E" Foreground="White" FontFamily="Corbel" FontWeight="Normal" Width="180" Height="60" />
+
+    </Grid>
+</Page>

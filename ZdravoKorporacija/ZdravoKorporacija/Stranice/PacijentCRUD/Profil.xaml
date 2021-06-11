@@ -1,0 +1,56 @@
+﻿<Page x:Class="ZdravoKorporacija.Stranice.PacijentCRUD.Profil"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ZdravoKorporacija.Stranice.PacijentCRUD"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="630"
+      Title="Profil" ShowsNavigationUI="True">
+
+    <Grid Background="Transparent" Margin="20, 44, 20, 10" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="100*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="59*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Ime:" FontSize="20"  Grid.Row="0" Grid.Column="0"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Foreground="#FF1E243E" FontFamily="Corbel"/>
+        <Label Content="Prezime:" FontSize="20" Grid.Row="1" Grid.Column="0"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Foreground="#FF1E243E" FontFamily="Corbel"/>
+        <Label Content="JMBG:" FontSize="20" Grid.Row="2" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Foreground="#FF1E243E" FontFamily="Corbel"/>
+        <Label Content="Adresa stanovanja:  " FontSize="20" Grid.Row="3" Grid.Column="0"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Foreground="#FF1E243E" FontFamily="Corbel"/>
+        <Label Content="Kontakt telefon:" FontSize="20" Grid.Row="4" Grid.Column="0"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Foreground="#FF1E243E" FontFamily="Corbel"/>
+        <Label Content="Mejl:" FontSize="20" Grid.Row="5" Grid.Column="0"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Foreground="#FF1E243E" FontFamily="Corbel"/>
+        <Label Content="Korisničko ime:  " FontSize="20" Grid.Row="6" Grid.Column="0"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Foreground="#FF1E243E" FontFamily="Corbel"/>
+        <TextBox x:Name="tbIme" Text="{Binding Ime}" FontSize="20" Grid.Row="0" Grid.Column="1" Foreground="#FF111529" TextAlignment="Left" Margin="0,5,0,0" Background="#00000000" FontWeight="Bold" FontFamily="Corbel" Height="30" VerticalAlignment="Top" SelectionBrush="Transparent" SelectionTextBrush="#FF111529" BorderBrush="Transparent" IsReadOnly="True"/>
+        <TextBox x:Name="tbPrezime" Text="{Binding Prezime}" FontSize="20" Grid.Row="1" Grid.Column="1" Foreground="#FF111529"  TextAlignment="Left" Margin="0,5,0,0" Background="#00000000" FontWeight="Bold" FontFamily="Corbel" Height="30" VerticalAlignment="Top" SelectionBrush="Transparent" SelectionTextBrush="#FF111529" BorderBrush="Transparent" IsReadOnly="True"/>
+        <TextBox x:Name="tbJmbg" Text="{Binding Jmbg}" FontSize="20" Grid.Row="2" Grid.Column="1" Foreground="#FF111529" TextAlignment="Left" Margin="0,5,0,0" Background="#00000000" FontWeight="Bold" FontFamily="Corbel" Height="30" VerticalAlignment="Top" SelectionBrush="Transparent" SelectionTextBrush="#FF111529" BorderBrush="Transparent" IsReadOnly="True"/>
+        <TextBox x:Name="tbAdresa" Text="{Binding AdresaStanovanja}" FontSize="20"  Grid.Row="3" Grid.Column="1" Foreground="#FF111529"  TextAlignment="Left" Margin="0,5,0,0" Background="#00000000" FontWeight="Bold" FontFamily="Corbel" Height="30" VerticalAlignment="Top" SelectionBrush="Transparent" SelectionTextBrush="#FF111529" BorderBrush="Transparent" IsReadOnly="True"/>
+        <TextBox x:Name="tbKontakt" Text="{Binding BrojTelefona}" FontSize="20" Grid.Row="4" Grid.Column="1" Foreground="#FF111529"  TextAlignment="Left" Margin="0,5,0,0" Background="#00000000" FontWeight="Bold" FontFamily="Corbel" Height="30" VerticalAlignment="Top" SelectionBrush="Transparent" SelectionTextBrush="#FF111529" BorderBrush="Transparent" IsReadOnly="True"/>
+        <TextBox x:Name="tbMejl" Text="{Binding Mejl}" FontSize="20" Grid.Row="5" Grid.Column="1" Foreground="#FF111529"  TextAlignment="Left" Margin="0,5,0,0" Background="#00000000" FontWeight="Bold" FontFamily="Corbel" Height="30" VerticalAlignment="Top" SelectionBrush="Transparent" SelectionTextBrush="#FF111529" BorderBrush="Transparent" IsReadOnly="True"/>
+        <TextBox x:Name="tbKorIme" Text="dusan" FontSize="20" Grid.Row="6" Grid.Column="1" Foreground="#FF111529"  TextAlignment="Left" Background="#00000000" FontWeight="Bold" Margin="0,5,0,0" FontFamily="Corbel" Height="30" VerticalAlignment="Top" SelectionBrush="Transparent" SelectionTextBrush="#FF111529" BorderBrush="Transparent" IsReadOnly="True"/>
+        <TextBlock x:Name="tbIme_Copy"  FontSize="17" Grid.Row="0" Foreground="#FFB60E0E" LineHeight="9" TextAlignment="Left" Margin="0,34,0,0" Background="#00000000" FontFamily="Corbel" Height="22" VerticalAlignment="Top" Grid.Column="1" IsEnabled="False"/>
+        <TextBlock x:Name="tbPrezime_Copy" FontSize="17" Grid.Row="1" Foreground="#FFB60E0E" LineHeight="9" TextAlignment="Left" Margin="0,34,0,0" Background="#00000000" FontFamily="Corbel" Height="22" VerticalAlignment="Top" Grid.Column="1" IsEnabled="False"/>
+        <TextBlock x:Name="tbJmbg_Copy" FontSize="17" Grid.Row="2" Foreground="#FFB60E0E" LineHeight="9" TextAlignment="Left" Margin="0,34,0,0" Background="#00000000" FontFamily="Corbel" Height="22" VerticalAlignment="Top" Grid.Column="1" IsEnabled="False"/>
+        <TextBlock x:Name="tbAdresa_Copy"  FontSize="17"  Grid.Row="3" Foreground="#FFB60E0E" LineHeight="9" TextAlignment="Left" Margin="0,34,0,0" Background="#00000000"  FontFamily="Corbel" Height="22" VerticalAlignment="Top" Grid.Column="1" IsEnabled="False"/>
+        <TextBlock x:Name="tbKontakt_Copy" FontSize="17" Grid.Row="4" Foreground="#FFB60E0E" LineHeight="9" TextAlignment="Left" Margin="0,34,0,0" Background="#00000000"  FontFamily="Corbel" Height="22" VerticalAlignment="Top" Grid.Column="1" IsEnabled="False"/>
+        <TextBlock x:Name="tbMejl_Copy"  FontSize="17" Grid.Row="5" Foreground="#FFB60E0E" LineHeight="9" TextAlignment="Left" Margin="0,34,0,0" Background="#00000000" FontFamily="Corbel" Height="22" VerticalAlignment="Top" Grid.Column="1" IsEnabled="False"/>
+        <TextBlock x:Name="tbKorIme_Copy" FontSize="17" Grid.Row="6" Foreground="#FFB60E0E" LineHeight="9" TextAlignment="Left" Background="#00000000"   FontFamily="Corbel" Height="22" VerticalAlignment="Top" Grid.Column="1" Margin="0,34,0,0" IsEnabled="False"/>
+
+        <Border BorderThickness="2" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="#ffd84d4d" Grid.Column="3" Grid.Row="0" Grid.RowSpan="4">
+            <Image Grid.Column="3" Grid.Row="0" Grid.RowSpan="4"  Source="/Images/profedit.png" OpacityMask="#FF975050"/>
+        </Border>
+        <Button Name="btnUredi"  Grid.Row="5" Grid.Column="3" Background="#f9d84d4d" Content="_Uredi profil" Foreground="#ff1e243e"  FontFamily="Corbel" FontWeight="Bold" FontSize="24" Margin="15,15,15,0" Width="165" Click="Button_Click"  />
+        <Button Name="btnPotvrdi" Grid.Row="5" Grid.Column="3" Background="#f9d84d4d" Content="_Potvrdi" Foreground="#ff1e243e"  FontFamily="Corbel" FontWeight="Bold" FontSize="24" Margin="47,15,47,0" Width="165" Click="Button2_Click" IsEnabled="False" Visibility="Hidden"/>
+
+    </Grid>
+</Page>

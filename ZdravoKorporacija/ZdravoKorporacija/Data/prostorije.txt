@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<ArrayOfProstorija xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Prostorija>
+    <inventar />
+    <statickaOprema>
+      <StatickaOprema>
+        <Id>6</Id>
+        <Naziv>infuzija</Naziv>
+        <UkupnaKolicina>100</UkupnaKolicina>
+        <Proizvodjac>galenika</Proizvodjac>
+        <DatumNabavke>0001-01-01T00:00:00</DatumNabavke>
+      </StatickaOprema>
+    </statickaOprema>
+    <Id>1</Id>
+    <Naziv>soba12</Naziv>
+    <Tip>Soba</Tip>
+    <Slobodna>false</Slobodna>
+    <Sprat>1</Sprat>
+  </Prostorija>
+  <Prostorija>
+    <inventar />
+    <dinamickaOprema />
+    <Id>0</Id>
+    <Naziv>soba11</Naziv>
+    <Tip>Soba</Tip>
+    <Slobodna>false</Slobodna>
+    <Sprat>1</Sprat>
+  </Prostorija>
+  <Prostorija>
+    <inventar />
+    <statickaOprema>
+      <StatickaOprema>
+        <Id>7</Id>
+        <Naziv>dfdsf</Naziv>
+        <UkupnaKolicina>200</UkupnaKolicina>
+        <Proizvodjac>ds</Proizvodjac>
+        <DatumNabavke>0001-01-01T00:00:00</DatumNabavke>
+      </StatickaOprema>
+    </statickaOprema>
+    <Id>2</Id>
+    <Naziv>soba21</Naziv>
+    <Tip>Soba</Tip>
+    <Slobodna>false</Slobodna>
+    <Sprat>2</Sprat>
+  </Prostorija>
+  <Prostorija>
+    <inventar />
+    <Id>3</Id>
+    <Naziv>soba22</Naziv>
+    <Tip>Soba</Tip>
+    <Slobodna>false</Slobodna>
+    <Sprat>2</Sprat>
+  </Prostorija>
+  <Prostorija>
+    <inventar />
+    <statickaOprema>
+      <StatickaOprema>
+        <Id>3</Id>
+        <Naziv>operacioni sto</Naziv>
+        <UkupnaKolicina>0</UkupnaKolicina>
+        <Proizvodjac>helas</Proizvodjac>
+        <DatumNabavke>0001-01-01T00:00:00</DatumNabavke>
+      </StatickaOprema>
+    </statickaOprema>
+    <Id>4</Id>
+    <Naziv>soba31</Naziv>
+    <Tip>Soba</Tip>
+    <Slobodna>false</Slobodna>
+    <Sprat>3</Sprat>
+  </Prostorija>
+  <Prostorija>
+    <inventar />
+    <statickaOprema>
+      <StatickaOprema>
+        <Id>2</Id>
+        <Naziv>stolica</Naziv>
+        <UkupnaKolicina>100</UkupnaKolicina>
+        <Proizvodjac>forma ideale</Proizvodjac>
+        <DatumNabavke>0001-01-01T00:00:00</DatumNabavke>
+      </StatickaOprema>
+    </statickaOprema>
+    <Id>5</Id>
+    <Naziv>soba33</Naziv>
+    <Tip>Soba</Tip>
+    <Slobodna>false</Slobodna>
+    <Sprat>3</Sprat>
+  </Prostorija>
+  <Prostorija>
+    <inventar />
+    <statickaOprema />
+    <dinamickaOprema />
+    <Id>7</Id>
+    <Naziv>soba34</Naziv>
+    <Tip>OperacionaSala</Tip>
+    <Slobodna>false</Slobodna>
+    <Sprat>2</Sprat>
+  </Prostorija>
+  <Prostorija>
+    <inventar />
+    <statickaOprema>
+      <StatickaOprema>
+        <Id>0</Id>
+        <Naziv>krevet</Naziv>
+        <UkupnaKolicina>4000</UkupnaKolicina>
+        <Proizvodjac>simpo</Proizvodjac>
+        <DatumNabavke>0001-01-01T00:00:00</DatumNabavke>
+      </StatickaOprema>
+    </statickaOprema>
+    <dinamickaOprema />
+    <Id>6</Id>
+    <Naziv>soba35</Naziv>
+    <Tip>Soba</Tip>
+    <Slobodna>false</Slobodna>
+    <Sprat>1</Sprat>
+  </Prostorija>
+</ArrayOfProstorija>

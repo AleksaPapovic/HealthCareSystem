@@ -1,0 +1,19 @@
+﻿<Window x:Class="ZdravoKorporacija.Stranice.Logovanje.upavnikLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoKorporacija.Stranice.Logovanje"
+        mc:Ignorable="d"
+           Title="Prijava na sistem" Height="365" Width="457">
+    <Grid>
+        <TextBox x:Name="textBoxIme" HorizontalAlignment="Left" Margin="56,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" Height="25"/>
+        <TextBox x:Name="textBoxSifra" HorizontalAlignment="Left" Margin="56,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" Height="25"/>
+        <Button Content="Potvrdi" HorizontalAlignment="Left" Margin="210,286,0,0" VerticalAlignment="Top" Width="89" Height="25" Click="Button_Click"/>
+        <Label x:Name="label" Content="Korisničko ime" HorizontalAlignment="Left" Margin="51,67,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Šifra" HorizontalAlignment="Left" Margin="51,160,0,0" VerticalAlignment="Top"/>
+        <Button Content="Odustani" HorizontalAlignment="Left" Margin="327,286,0,0" VerticalAlignment="Top" Width="89" Height="25" Click="odustani_Click"/>
+        <Label x:Name="label2" Content="Zaboravili ste šifru ?" HorizontalAlignment="Left" Margin="201,221,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,21 @@
+﻿<Window x:Class="ZdravoKorporacija.Stranice.SekretarCRUD.sekretarStart"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ZdravoKorporacija.Stranice.SekretarCRUD"
+      mc:Ignorable="d" 
+      Height="450" Width="800" Background="CadetBlue"
+      Title="Sekretar">
+
+    <Grid>
+        <Grid Margin="10">
+            <Button Content="NALOZI" HorizontalAlignment="Left" VerticalAlignment="Top" Height="52" Width="138" Click="Button_Click" Margin="96,0,0,0"/>
+            <Button Content="PREGLEDI" HorizontalAlignment="Left" VerticalAlignment="Top" Height="52" Width="138" Click="Button_Click_1" Margin="252,0,0,0"/>
+            <Button Content="OBAVESTENJA" HorizontalAlignment="Left" Height="52" Margin="417,0,0,0" VerticalAlignment="Top" Width="146" Click="Button_Click_2"/>
+            <Button Content="LEKARI" HorizontalAlignment="Left" Height="52" Margin="585,0,0,0" VerticalAlignment="Top" Width="146" Click="lekari"/>
+        </Grid>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="1078,111,0,0" VerticalAlignment="Top" Width="0"/>
+        <Frame x:Name="fr" NavigationUIVisibility="hidden" Margin="0,67,10,0" Navigated="fr_Navigated" />
+    </Grid>
+</Window>

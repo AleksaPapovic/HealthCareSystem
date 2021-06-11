@@ -1,0 +1,39 @@
+﻿<Window x:Class="ZdravoKorporacija.Stranice.UpravnikCRUD.Renoviranje"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoKorporacija.Stranice.UpravnikCRUD"
+        mc:Ignorable="d"
+        Title="Renoviranje" Height="450" Width="450">
+    <Grid>
+        <Label x:Name="label" Content="Prostorija" HorizontalAlignment="Left" Margin="70,52,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Pocetak" HorizontalAlignment="Left" Margin="70,114,0,0" VerticalAlignment="Top"/>
+        <DatePicker Name ="timePicker" HorizontalAlignment="Left" Margin="194,114,0,0" VerticalAlignment="Top" Height="28" SelectedDateChanged="date_changed"/>
+        <ComboBox Name="sati" HorizontalAlignment="Left" Margin="317,116,0,0" VerticalAlignment="Top" Width="67" Height="26" SelectionChanged="sati_SelectionChanged" />
+        <Label x:Name="label1_Copy" Content="Trajanje" HorizontalAlignment="Left" Margin="70,176,0,0" VerticalAlignment="Top" Height="26"/>
+        <ComboBox x:Name="cbProstorija" HorizontalAlignment="Left" Margin="194,54,0,0" VerticalAlignment="Top" Width="190" SelectionChanged="cbProstorija_SelectionChanged" Height="26">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock>
+                        <TextBlock.Text>
+                            <MultiBinding StringFormat="{}{0} {1}">
+                                <Binding Path="Id"/>
+                                <Binding Path="Naziv"/>
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+
+        <TextBox x:Name="textBoxTrajanje" HorizontalAlignment="Left" Margin="194,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="26"/>
+        <Button Width="100" Content="POTVRDI" HorizontalAlignment="Left" Margin="86,374,0,0" VerticalAlignment="Top" Click="potvrdi"/>
+        <Button Width="100" Content="ODUSTANI" HorizontalAlignment="Left" Margin="266,374,0,0" VerticalAlignment="Top" Click="odustani"/>
+        <Label x:Name="label1_Copy1" Content="Izaberite prostorije" HorizontalAlignment="Left" Margin="70,262,0,0" VerticalAlignment="Top" Height="26"/>
+        <Label x:Name="label1_Copy2" Content="Akcija" HorizontalAlignment="Left" Margin="70,221,0,0" VerticalAlignment="Top" Width="46"/>
+        <Button x:Name="buttonProstorije" Content="Prostorije" HorizontalAlignment="Left" Margin="194,266,0,0" VerticalAlignment="Top" Height="22" Width="190" Click="button_Click_1"/>
+        <RadioButton x:Name="radioButton" Content="Spajanje" HorizontalAlignment="Left" Margin="194,221,0,0" VerticalAlignment="Top" Checked="radioButton_Checked"/>
+        <RadioButton x:Name="radioButton1" Content="Razdvajanje" HorizontalAlignment="Left" Margin="296,221,0,0" VerticalAlignment="Top" Checked="radioButton1_Checked"/>
+    </Grid>
+</Window>

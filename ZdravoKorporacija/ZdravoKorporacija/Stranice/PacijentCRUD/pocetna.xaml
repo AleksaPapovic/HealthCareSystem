@@ -1,0 +1,86 @@
+﻿<Window x:Class="ZdravoKorporacija.Stranice.PacijentCRUD.Pocetna"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        xmlns:local="clr-namespace:ZdravoKorporacija.Stranice.PacijentCRUD"
+        mc:Ignorable="d"
+        Title="Zdravo korporacija"
+        Height="768"
+        Width="1366" 
+        WindowState="Maximized"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF4158BD" Offset="0"/>
+                <GradientStop Color="#FF9D9FA8" Offset="1"/>
+                <GradientStop Color="#5F495EBA" Offset="0.37"/>
+                <GradientStop Color="#FF485DBA" Offset="0.096"/>
+                <GradientStop Color="#644C60B9" Offset="0.111"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="98.04"/>
+            <RowDefinition Height="21.96"/>
+            <RowDefinition  Height="*"/>
+            <RowDefinition  Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="490*"/>
+            <ColumnDefinition Width="73*"/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Row="0" Grid.Column="0" Height="120" Width="240" BorderBrush="#FFCBCBF5" Grid.RowSpan="2" OpacityMask="Black" Background="#FFCBCBF5">
+            <Image Source="/Images/output-onlinepngtools.png" Stretch="None" OpacityMask="Black"/>
+        </Button>
+        <Grid Grid.Row="2" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition  Height="*"/>
+                <RowDefinition  Height="*"/>
+                <RowDefinition  Height="*"/>
+                <RowDefinition  Height="*"/>
+                <RowDefinition  Height="*"/>
+                <RowDefinition  Height="*"/>
+                <RowDefinition  Height="*"/>
+                <RowDefinition  Height="*"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="pocetnaBtn" Content="_Početna" FontSize="25" Grid.Row="0" Grid.Column="0" BorderBrush="#FF3753CB" BorderThickness="0,0,0,0" Click="pocetnaBtn_Click" Foreground="#FF0C1021" FontWeight="Bold" FontFamily="Corbel" OpacityMask="Black" Background="#FFCBCBF5" />
+            <Button x:Name="obavjestenjaBtn" Content="_Obaveštenja" FontSize="25" Grid.Row="1" Grid.Column="0" BorderBrush="#FF3753CB" BorderThickness="0,0,0,0" Click="obavjestenjaBtn_Click" Foreground="#FF0C1021" FontWeight="Bold" FontFamily="Corbel" OpacityMask="Black" Background="#FFCBCBF5" />
+            <Button x:Name="preglediBtn" Content="_Moji pregledi" FontSize="25" Grid.Row="2" Grid.Column="0" BorderBrush="#FF3753CB" BorderThickness="0,0,0,0" Click="preglediBtn_Click" Foreground="#FF0C1021" FontWeight="Bold" FontFamily="Corbel" OpacityMask="Black" Background="#FFCBCBF5" />
+            <Button x:Name= "kartonBtn" Content="_Zdravstveni karton" FontSize="25" Grid.Row="3" Grid.Column="0" BorderBrush="#FF3753CB" BorderThickness="0,0,0,0" Click="kartonBtn_Click" Foreground="#FF0C1021" FontWeight="Bold" FontFamily="Corbel" OpacityMask="Black" Background="#FFCBCBF5" />
+            <Button x:Name="terapijaBtn" Content="_Terapija" FontSize="25" Grid.Row="4" Grid.Column="0" BorderBrush="#FF3753CB" BorderThickness="0,0,0,0" Foreground="#FF0C1021" FontWeight="Bold" FontFamily="Corbel" OpacityMask="Black" Background="#FFCBCBF5" Click="terapijaBtn_Click" />
+            <Button x:Name="profilBtn" Content="_Profil" FontSize="25" Grid.Row="5" Grid.Column="0" BorderBrush="#FF3753CB" BorderThickness="0,0,0,0" Foreground="#FF0C1021" FontWeight="Bold" FontFamily="Corbel" OpacityMask="Black" Background="#FFCBCBF5" Click="profilBtn_Click" />
+            <Button x:Name="pomocBtn" Content="_Help" FontSize="25" Grid.Row="6" Grid.Column="0" BorderBrush="#FF3753CB" BorderThickness="0,0,0,0" Click="pomocBtn_Click" Foreground="#FF0C1021" FontWeight="Bold" FontFamily="Corbel" OpacityMask="Black" Background="#FFCBCBF5" />
+            <Button x:Name="odjavaBtn" Content="_Odjavi se" FontSize="25" Grid.Row="7" Grid.Column="0" BorderBrush="#FF3753CB" BorderThickness="0,0,0,0" Click="odjavaBtn_Click" Foreground="#FF0C1021" FontWeight="Bold" FontFamily="Corbel" OpacityMask="Black" Background="#FFCBCBF5" />
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column ="0" Grid.ColumnSpan="3" Background="#FF30333B" Margin="0,632,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Background="#FF1E243E" Grid.RowSpan="2">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Height="90">
+                    <Label Name="lblUlogovani" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" Foreground="#FFBBC3E6" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#FF1E243E" Height="62" FontWeight="Bold" FontFamily="Corbel"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Height="90">
+                    <Border   BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="0,0,20,0" Background="Black" BorderBrush="#aad84d4d">
+                         <Image Height="80" Width="80" Source="/Images/upper.png" VerticalAlignment="Center" OpacityMask="#FF975050"/>
+                    </Border>
+                    <!--<Image Height="80" Width="80" Source="/Images/upper.png" VerticalAlignment="Center"  Margin="0,0,20,0"/>-->
+                </StackPanel>
+            </StackPanel>
+
+        </Grid>
+        <Frame Grid.Row="2" Grid.Column="1" x:Name="Main" NavigationUIVisibility="Hidden" Grid.ColumnSpan="2" Foreground="Black"/>
+    </Grid>
+</Window>

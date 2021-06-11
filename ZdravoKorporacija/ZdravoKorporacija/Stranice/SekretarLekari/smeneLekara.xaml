@@ -1,0 +1,23 @@
+﻿<Window x:Class="ZdravoKorporacija.Stranice.SekretarLekari.smeneLekara"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoKorporacija.Stranice.SekretarLekari"
+         mc:Ignorable="d"
+        Title="prikaziKarton" Height="350" Width="555" Background="CadetBlue">
+    <Grid Margin="0,0,0,4">
+        <TextBlock Text="Smena:" TextWrapping="Wrap" Margin="192,42,307,254"/>
+        <TextBlock Text="do:" TextWrapping="Wrap" Margin="332,179,184,132"/>
+        <DatePicker Name="odDP" Margin="119,179,320,101"/>
+        <DatePicker Name="doDP" Margin="376,179,49,102"/>
+        <Button Content="Dodaj" HorizontalAlignment="Left" Height="35" Margin="240,271,0,0" VerticalAlignment="Top" Width="86" Click="dodaj"/>
+        <ComboBox Name="smenaCB" Margin="278,43,139,266">
+            <ComboBoxItem>Prva</ComboBoxItem>
+
+            <ComboBoxItem>Druga</ComboBoxItem>
+        </ComboBox>
+        <TextBlock Text="Od:" TextWrapping="Wrap" Margin="75,179,441,132"/>
+
+    </Grid>
+</Window>

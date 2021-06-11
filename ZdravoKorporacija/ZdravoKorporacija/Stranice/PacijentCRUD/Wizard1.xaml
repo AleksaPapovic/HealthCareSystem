@@ -1,0 +1,54 @@
+﻿<Window x:Class="ZdravoKorporacija.Stranice.PacijentCRUD.Wizard1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ae="clr-namespace:AeroWizard;assembly=AeroWizard"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="Wizard" Height="500" Width="500"
+        FontFamily="Corbel"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <xctk:Wizard FinishButtonClosesWindow="True">
+
+                <xctk:WizardPage x:Name="IntroPage" FontSize="14" FontFamily="Corbel" Background="#644c60b9" 
+                                   Title="Dobrodošli u Wizard aplikacije Zdravo korporacije!"
+                                   Description="Mi smo moderna opšta bolnica, opremljena po najvišim svetskim standardima. Pružamo širok spektar medicinskih usluga i visoko personalizovan tretman svakom našem pacijentu." />
+                      
+            <xctk:WizardPage x:Name="Page1" PageType="Interior"
+                                   Title="Zdravo aplikacija" FontSize="14" FontFamily="Corbel" Background="#644c60b9"  
+                                   Description="Zašto?"
+                                   NextPage="{Binding ElementName=Page2}"
+                                   PreviousPage="{Binding ElementName=IntroPage}">
+                <StackPanel>
+                    <TextBlock TextWrapping="Wrap" FontSize="17">U brzom vremenu u kojem živimo, navikli smo da je sve na dohvat ruke ili na 'samo par klikova' od nas. Kako bismo u potpunosti odgovorili na sve potrebe naših korisnika, važno je da uvek idemo u korak sa vremenom i pažljivo osluškujemo na koji način možemo da unapredimo usluge ili olakšamo pojedine procedure.
+                        Upravo zato smo odlučili da lansiramo 'Zdravo' aplikaciju, za koju smo sigurni da će vam uštedeti vreme i omogućiti da kontinuirano, na jednom mestu imate uvid u vaše zdravstveno stanje.</TextBlock>
+                </StackPanel>
+            </xctk:WizardPage>
+            <xctk:WizardPage x:Name="Page2" PageType="Interior" FontSize="14" FontFamily="Corbel"
+                                   Title="Mogućnosti koje nudi aplikacija" Background="#644c60b9"
+                                  >
+                <StackPanel>
+                    <TextBlock TextWrapping="Wrap" FontSize="17"> Uz Zdravo aplikaciju, moći ćete da:</TextBlock>
+                    <TextBlock TextWrapping="Wrap" FontSize="17">- Zakažete pregled (uz odabir željenog lekara):</TextBlock>
+                    <TextBlock TextWrapping="Wrap" FontSize="17">- Otkažete ili pomerite pregled za termin koji vam odgovara</TextBlock>
+                     <TextBlock TextWrapping="Wrap" FontSize="17">- Imate uvid u sve obavljene specijalističke preglede i celokupan zdravstveni karton</TextBlock>
+                    <TextBlock TextWrapping="Wrap" FontSize="17">- Dobijate obaveštenja o novostima Zdravo sistema </TextBlock>
+                    <TextBlock TextWrapping="Wrap" FontSize="17">- Primate podsetnike i postavljate beleške koji će vam omogućiti da lakše ispratite tok terapije i poboljšate proces lečenja i oporavka.
+                             </TextBlock>
+                </StackPanel>
+            </xctk:WizardPage>
+            <xctk:WizardPage x:Name="Page3" PageType="Interior" FontSize="14" FontFamily="Corbel"
+                                   Title="Dobrodošli!" Background="#644c60b9" CanFinish="True"
+                                  Description="Možete započeti korišćenje aplikacije."
+                                 >
+
+                <Image Source=""  Width="900" Height="500"   />
+            </xctk:WizardPage>
+
+        </xctk:Wizard>
+    </Grid>
+
+</Window>

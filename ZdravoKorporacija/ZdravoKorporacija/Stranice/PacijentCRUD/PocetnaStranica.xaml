@@ -1,0 +1,76 @@
+﻿<Page x:Class="ZdravoKorporacija.Stranice.PacijentCRUD.PocetnaStranica"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ZdravoKorporacija.Stranice.PacijentCRUD"
+      xmlns:calendar="clr-namespace:MyCalendar.Calendar;assembly=MyCalendar.Calendar"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="630"
+      Title="PocetnaStranica">
+
+    <Grid Background="Transparent">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="270*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        <Image Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" Source="/Images/pocetna.png" Grid.RowSpan="5" Height="520" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+        <TextBlock Text="Dobar dan!" Margin="30, 0, 0, 0" FontFamily="Corbel" FontWeight="Bold" FontSize="60" Grid.Row="0" Grid.Column="0"  HorizontalAlignment="Left" />
+        <TextBlock Text="Kako se osećate danas?" Margin="30, 0, 0, 0" TextWrapping="Wrap" FontFamily="Corbel" FontWeight="Bold" FontSize="40" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="0" />
+        <!--<Button Content="Zakaži pregled" FontFamily="Corbel" FontWeight="Bold" FontSize ="26" Grid.Row="2" Width="210" Grid.Column="0" Background="#AFD44C4C" Margin="68,0,67,28" />-->
+
+        <Grid Grid.Row="2" Grid.ColumnSpan="1" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="179*"/>
+                <ColumnDefinition Width="274*"/>
+                <ColumnDefinition Width="179*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="290*"/>
+                <RowDefinition Height="45*"/>
+            </Grid.RowDefinitions>
+            <DockPanel  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"  Margin="30, 10, 10, -114">
+                <Grid DockPanel.Dock="Top" Background="#ff1e243e" MinHeight="70">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20*"/>
+                        <RowDefinition Height="20*"/>
+                        <RowDefinition Height="20*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="50*"/>
+                    </Grid.ColumnDefinitions>
+                    <ComboBox Name="mjeseci" Grid.Column="1" Grid.Row="1" Width="131" Margin="0, 0, 15, 0" FontFamily="Corbel" FontSize="20" VerticalContentAlignment="Center" Foreground="#ff1e243e" BorderBrush="{x:Null}">
+                        <ComboBox.Background>
+                            <SolidColorBrush Color="#FFA64F4F" Opacity="1"/>
+                        </ComboBox.Background>
+                    </ComboBox>
+                    <ComboBox Name="godine" Grid.Column="2" Grid.Row="1" Width="70" Margin="15, 0, 0, 0" FontFamily="Corbel" FontSize="20" VerticalContentAlignment="Center" Foreground="#ff1e243e" BorderBrush="{x:Null}">
+                        <ComboBox.Background>
+                            <SolidColorBrush Color="#FFA64F4F" Opacity="1"/>
+                        </ComboBox.Background>
+                    </ComboBox>
+                </Grid>
+                <calendar:Calendar Name="kalendar" Background="#ff1e243e" FontFamily="Corbel" Foreground="White" />
+
+            </DockPanel>
+            <!--<Button Content="Zakaži pregled" FontFamily="Corbel" FontWeight="Bold" FontSize ="26" Grid.Row="3" Width="180" Grid.ColumnSpan="3" Background="#AFD44C4C" Margin="79, 67, 79, -55" />-->
+
+
+        </Grid>
+
+        <TextBlock Text="Pomozi nam da unapredimo usluge!" Width="400" FontFamily="Corbel" FontSize="26" Grid.ColumnSpan="3" Grid.Column="1" TextWrapping="Wrap" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Bottom"  Grid.RowSpan="2" Margin="70, 0, 0, 70"/>
+        <Button Content="Ostavi feedback" FontFamily="Corbel" FontWeight="Bold" FontSize = "26" Grid.Row="3"  Grid.Column="1" Background="#FF789EFF" HorizontalAlignment="Left"  Width="190" Margin="180,10,0,14" Height="45" Grid.ColumnSpan="2" Click="Button_Click" />
+
+    </Grid>
+</Page>

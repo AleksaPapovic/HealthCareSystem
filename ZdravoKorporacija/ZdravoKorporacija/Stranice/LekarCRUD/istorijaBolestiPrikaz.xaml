@@ -1,0 +1,40 @@
+﻿<Window x:Class="ZdravoKorporacija.Stranice.LekarCRUD.istorijaBolestiPrikaz"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoKorporacija.Stranice.LekarCRUD"
+        mc:Ignorable="d"
+        Title="istorijaBolestiPrikaz" Height="450" Width="450" Background="CadetBlue">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="408" Width="417">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="59*"/>
+            <ColumnDefinition Width="141*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Content="POTVRDI" HorizontalAlignment="Left" Margin="109,34,0,0" Grid.Row="5" VerticalAlignment="Top" Width="80" Grid.ColumnSpan="2"/>
+        <Button Content="ODUSTANI" HorizontalAlignment="Center" Margin="0,34,0,0" Grid.Row="5" VerticalAlignment="Top" Width="80" Grid.Column="1"  />
+        <TextBlock Style="{DynamicResource textblock}" TextWrapping="Wrap" Margin="34,0,259,45" Grid.Row="2" Grid.ColumnSpan="2"><Run Text="Opis"/><Run Text=":"/></TextBlock>
+        <TextBlock Style="{DynamicResource textblock}" Text="Oboljenje" TextWrapping="Wrap" Margin="34,28,24,22" Grid.Row="1"/>
+        <TextBox Name="oboljenjeText" Grid.Column="1" HorizontalAlignment="Left" Margin="25,30,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="239"/>
+        <RichTextBox Name ="opisText" Grid.Row="2" Margin="26,0,29,34" Grid.RowSpan="3" Grid.Column="1">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
+    </Grid>
+</Window>
+

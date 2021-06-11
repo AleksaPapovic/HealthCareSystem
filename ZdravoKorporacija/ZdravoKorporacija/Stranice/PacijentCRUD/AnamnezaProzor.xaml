@@ -1,0 +1,43 @@
+﻿<Window x:Class="ZdravoKorporacija.Stranice.PacijentCRUD.AnamnezaProzor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoKorporacija.Stranice.PacijentCRUD"
+        mc:Ignorable="d" Background="#FFEAEAEA"
+        Title="Anamneza"  WindowStartupLocation="CenterScreen" Height="495" Width="700">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="38*"/>
+            <ColumnDefinition Width="103*"/>
+            <ColumnDefinition Width="211*"/>
+            <ColumnDefinition Width="175*"/>
+            <ColumnDefinition Width="174*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="53*"/>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="109*"/>
+            <RowDefinition Height="205*"/>
+            <RowDefinition Height="52*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="labelaTip" Grid.Row="0" Grid.Column="1" Content="{Binding Tip}" HorizontalContentAlignment="Right" FontSize="26" Margin="0,0,5,49" FontStyle="Italic" Grid.RowSpan="3" Foreground="#FFA23434"/>
+        <Label x:Name="labelaDatum" Grid.Row="0" Grid.Column="2" Content="{Binding Pocetak}" FontSize="26" FontStyle="Italic" Grid.RowSpan="3" Margin="0,0,0,49" Foreground="#FFA23434"></Label>
+        <Label Grid.Row="0" Grid.Column="3" Content="Lekar:" FontSize="26" HorizontalAlignment="Left" Margin="10,0,0,49" Width="76" FontStyle="Italic" Grid.RowSpan="3" Foreground="#FFA23434"></Label>
+        <Label x:Name="labelaLekar" Grid.Row="0" Grid.Column="3" Content="{Binding Lekar.Prezime}" FontSize="26" Grid.ColumnSpan="2" Margin="88,0,0,49" FontStyle="Italic" Grid.RowSpan="3" Foreground="#FFA23434"></Label>
+        <Label Grid.Column="1" Content="Simptomi:" FontSize="20" Margin="0,4,0,109" Grid.ColumnSpan="2" Grid.Row="2" Grid.RowSpan="2" Foreground="#FFA23434" />
+        <Label Grid.Column="3" Content="Opis:" FontSize="20" Margin="10,4,0,109" Grid.ColumnSpan="2" Grid.Row="2" Grid.RowSpan="2" Foreground="#FFA23434" />
+        <TextBox x:Name="tbSimptomi" Text="{Binding Simptomi}" FontSize="16" TextWrapping="Wrap" Grid.Row="2" Grid.Column="1" Background="Transparent" BorderBrush="#FFB64242" Margin="0,38,10,204" Grid.RowSpan="3" Grid.ColumnSpan="2" Foreground="#FFA23434"  />
+        <TextBox x:Name="tbOpis" Text="{Binding Opis}" FontSize="16" TextWrapping="Wrap" Grid.Row="2" Grid.Column="3" Background="Transparent" BorderBrush="#FFB64242" Margin="10,38,49,204" Grid.RowSpan="3" Grid.ColumnSpan="2" Foreground="#FFA23434" />
+        <Button x:Name="dodajBeleskuBtn" Grid.Row="5" Grid.Column="3" Content="Dodaj belešku" FontSize="20" Background="#FFB64242" Click="dodajBeleskuBtn_Click" Margin="10,6,10,4" BorderBrush="#FFEAEAEA" Foreground="#FFEAEAEA" />
+        <Button x:Name="nazadBtn" Grid.Row="5" Grid.Column="4" Content="Nazad" FontSize="20" Background="#FFB64242" Margin="5,6,15,5" Click="nazadBtn_Click" Foreground="#FFEAEAEA" BorderBrush="#FFEAEAEA"   />
+        <Grid Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="5" Margin="0,105,0,1" Grid.RowSpan="2">
+            <Frame x:Name="Beleske" NavigationUIVisibility="Hidden"></Frame>
+        </Grid>
+        <Line Grid.Column="0" Grid.ColumnSpan="5" Stroke="Black" X1="640" StrokeThickness="1" Margin="20,51,0,49" Grid.RowSpan="3" />
+
+
+    </Grid>
+</Window>

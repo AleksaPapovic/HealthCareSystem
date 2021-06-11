@@ -1,0 +1,359 @@
+[
+  {
+    "lek": null,
+    "lekar": null,
+    "zdravstveniKarton": {
+      "izvestajOHospitalizaciji": null,
+      "istorijaBolesti": null,
+      "recept": null,
+      "termin": null,
+      "patient": null,
+      "Id": 0,
+      "ZdravstvenoStanje": 0,
+      "Alergije": null,
+      "KrvnaGrupa": 0,
+      "Vakcine": null
+    },
+    "Id": 0,
+    "Doziranje": "44",
+    "Trajanje": 4,
+    "NazivLeka": "3",
+    "Pocetak": "2021-06-06T08:30:00"
+  },
+  {
+    "lek": null,
+    "lekar": null,
+    "zdravstveniKarton": {
+      "izvestajOHospitalizaciji": null,
+      "istorijaBolesti": null,
+      "recept": null,
+      "termin": null,
+      "patient": null,
+      "Id": 0,
+      "ZdravstvenoStanje": 0,
+      "Alergije": null,
+      "KrvnaGrupa": 0,
+      "Vakcine": null
+    },
+    "Id": 1,
+    "Doziranje": "3",
+    "Trajanje": 4,
+    "NazivLeka": "Lekic",
+    "Pocetak": "2021-06-12T08:30:00"
+  },
+  {
+    "lek": null,
+    "lekar": null,
+    "zdravstveniKarton": {
+      "izvestajOHospitalizaciji": null,
+      "istorijaBolesti": null,
+      "recept": null,
+      "termin": null,
+      "patient": null,
+      "Id": 0,
+      "ZdravstvenoStanje": 0,
+      "Alergije": null,
+      "KrvnaGrupa": 0,
+      "Vakcine": null
+    },
+    "Id": 3,
+    "Doziranje": "3",
+    "Trajanje": 4,
+    "NazivLeka": "zz",
+    "Pocetak": "2021-06-13T08:30:00"
+  },
+  {
+    "lek": null,
+    "lekar": null,
+    "zdravstveniKarton": {
+      "izvestajOHospitalizaciji": null,
+      "istorijaBolesti": null,
+      "recept": null,
+      "termin": null,
+      "patient": null,
+      "Id": 0,
+      "ZdravstvenoStanje": 0,
+      "Alergije": null,
+      "KrvnaGrupa": 0,
+      "Vakcine": null
+    },
+    "Id": 2,
+    "Doziranje": "33",
+    "Trajanje": 33,
+    "NazivLeka": "Lekic",
+    "Pocetak": "2021-06-13T08:30:00"
+  },
+  {
+    "lek": null,
+    "lekar": null,
+    "zdravstveniKarton": {
+      "izvestajOHospitalizaciji": null,
+      "istorijaBolesti": null,
+      "recept": null,
+      "termin": null,
+      "patient": null,
+      "Id": 0,
+      "ZdravstvenoStanje": 0,
+      "Alergije": null,
+      "KrvnaGrupa": 0,
+      "Vakcine": null
+    },
+    "Id": 4,
+    "Doziranje": "44",
+    "Trajanje": 4,
+    "NazivLeka": "333",
+    "Pocetak": "2021-06-11T08:30:00"
+  },
+  {
+    "lek": null,
+    "lekar": null,
+    "zdravstveniKarton": {
+      "izvestajOHospitalizaciji": null,
+      "istorijaBolesti": null,
+      "recept": null,
+      "termin": null,
+      "patient": null,
+      "Id": 0,
+      "ZdravstvenoStanje": 0,
+      "Alergije": null,
+      "KrvnaGrupa": 0,
+      "Vakcine": null
+    },
+    "Id": 5,
+    "Doziranje": "323",
+    "Trajanje": 44,
+    "NazivLeka": "dadad",
+    "Pocetak": "2021-06-12T08:30:00"
+  },
+  {
+    "lek": null,
+    "lekar": null,
+    "zdravstveniKarton": {
+      "izvestajOHospitalizaciji": null,
+      "istorijaBolesti": null,
+      "recept": null,
+      "termin": null,
+      "patient": null,
+      "Id": 0,
+      "ZdravstvenoStanje": 0,
+      "Alergije": null,
+      "KrvnaGrupa": 0,
+      "Vakcine": null
+    },
+    "Id": 6,
+    "Doziranje": "32",
+    "Trajanje": 4,
+    "NazivLeka": "szcxz",
+    "Pocetak": "2021-06-12T09:30:00"
+  },
+  {
+    "lek": null,
+    "lekar": null,
+    "zdravstveniKarton": {
+      "izvestajOHospitalizaciji": null,
+      "istorijaBolesti": null,
+      "recept": null,
+      "termin": null,
+      "patient": null,
+      "Id": 0,
+      "ZdravstvenoStanje": 0,
+      "Alergije": null,
+      "KrvnaGrupa": 0,
+      "Vakcine": null
+    },
+    "Id": 7,
+    "Doziranje": "452",
+    "Trajanje": 4,
+    "NazivLeka": "3323",
+    "Pocetak": "2021-06-20T08:30:00"
+  },
+  {
+    "lek": null,
+    "lekar": null,
+    "zdravstveniKarton": {
+      "izvestajOHospitalizaciji": null,
+      "istorijaBolesti": null,
+      "recept": null,
+      "termin": null,
+      "patient": null,
+      "Id": 0,
+      "ZdravstvenoStanje": 0,
+      "Alergije": null,
+      "KrvnaGrupa": 0,
+      "Vakcine": null
+    },
+    "Id": 8,
+    "Doziranje": "33",
+    "Trajanje": 3,
+    "NazivLeka": "zz",
+    "Pocetak": "2021-06-10T09:00:00"
+  },
+  {
+    "lek": null,
+    "lekar": null,
+    "zdravstveniKarton": {
+      "izvestajOHospitalizaciji": null,
+      "istorijaBolesti": null,
+      "recept": null,
+      "termin": null,
+      "patient": null,
+      "Id": 0,
+      "ZdravstvenoStanje": 0,
+      "Alergije": null,
+      "KrvnaGrupa": 0,
+      "Vakcine": null
+    },
+    "Id": 9,
+    "Doziranje": "32",
+    "Trajanje": 33,
+    "NazivLeka": "dIsa",
+    "Pocetak": "2021-06-13T08:30:00"
+  },
+  {
+    "lek": null,
+    "lekar": null,
+    "zdravstveniKarton": {
+      "izvestajOHospitalizaciji": null,
+      "istorijaBolesti": null,
+      "recept": null,
+      "termin": null,
+      "patient": null,
+      "Id": 0,
+      "ZdravstvenoStanje": 0,
+      "Alergije": null,
+      "KrvnaGrupa": 0,
+      "Vakcine": null
+    },
+    "Id": 10,
+    "Doziranje": "434",
+    "Trajanje": 3,
+    "NazivLeka": "zd",
+    "Pocetak": "2021-06-20T08:30:00"
+  },
+  {
+    "lek": null,
+    "lekar": null,
+    "zdravstveniKarton": {
+      "izvestajOHospitalizaciji": null,
+      "istorijaBolesti": null,
+      "recept": null,
+      "termin": null,
+      "patient": null,
+      "Id": 0,
+      "ZdravstvenoStanje": 0,
+      "Alergije": null,
+      "KrvnaGrupa": 0,
+      "Vakcine": null
+    },
+    "Id": 11,
+    "Doziranje": "5",
+    "Trajanje": 3,
+    "NazivLeka": "Novi",
+    "Pocetak": "2021-06-13T08:30:00"
+  },
+  {
+    "lek": null,
+    "lekar": null,
+    "zdravstveniKarton": {
+      "izvestajOHospitalizaciji": null,
+      "istorijaBolesti": null,
+      "recept": null,
+      "termin": null,
+      "patient": null,
+      "Id": 0,
+      "ZdravstvenoStanje": 0,
+      "Alergije": null,
+      "KrvnaGrupa": 0,
+      "Vakcine": null
+    },
+    "Id": 12,
+    "Doziranje": "2",
+    "Trajanje": 4,
+    "NazivLeka": "Zadnji",
+    "Pocetak": "2021-06-13T09:00:00"
+  },
+  {
+    "lek": null,
+    "lekar": null,
+    "zdravstveniKarton": {
+      "izvestajOHospitalizaciji": null,
+      "istorijaBolesti": null,
+      "recept": null,
+      "termin": null,
+      "patient": null,
+      "Id": 0,
+      "ZdravstvenoStanje": 0,
+      "Alergije": null,
+      "KrvnaGrupa": 0,
+      "Vakcine": null
+    },
+    "Id": 13,
+    "Doziranje": "33",
+    "Trajanje": 5,
+    "NazivLeka": "mlim",
+    "Pocetak": "2021-06-13T08:30:00"
+  },
+  {
+    "lek": null,
+    "lekar": null,
+    "zdravstveniKarton": {
+      "izvestajOHospitalizaciji": null,
+      "istorijaBolesti": null,
+      "recept": null,
+      "termin": null,
+      "patient": null,
+      "Id": 0,
+      "ZdravstvenoStanje": 0,
+      "Alergije": null,
+      "KrvnaGrupa": 0,
+      "Vakcine": null
+    },
+    "Id": 14,
+    "Doziranje": "33",
+    "Trajanje": 4,
+    "NazivLeka": "lol",
+    "Pocetak": "2021-06-13T08:30:00"
+  },
+  {
+    "lek": null,
+    "lekar": null,
+    "zdravstveniKarton": {
+      "izvestajOHospitalizaciji": null,
+      "istorijaBolesti": null,
+      "recept": null,
+      "termin": null,
+      "patient": null,
+      "Id": 0,
+      "ZdravstvenoStanje": 0,
+      "Alergije": null,
+      "KrvnaGrupa": 0,
+      "Vakcine": null
+    },
+    "Id": 15,
+    "Doziranje": "2",
+    "Trajanje": 8,
+    "NazivLeka": "Lekic",
+    "Pocetak": "2021-06-12T08:30:00"
+  },
+  {
+    "lek": null,
+    "lekar": null,
+    "zdravstveniKarton": {
+      "izvestajOHospitalizaciji": null,
+      "istorijaBolesti": null,
+      "recept": null,
+      "termin": null,
+      "patient": null,
+      "Id": 0,
+      "ZdravstvenoStanje": 0,
+      "Alergije": null,
+      "KrvnaGrupa": 0,
+      "Vakcine": null
+    },
+    "Id": 16,
+    "Doziranje": "3",
+    "Trajanje": 3,
+    "NazivLeka": "dd",
+    "Pocetak": "2021-06-17T09:30:00"
+  }
+]

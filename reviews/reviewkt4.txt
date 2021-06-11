@@ -1,0 +1,3 @@
+Aleksa Papovic,review za Dusana Lekica(Sequence diagram)
+Na dijagramu da se malo vise ogranici alternativama nego opt zato sto deo koda ispod opt ce se svakako izvrsiti. Nedostatak metoda na class diagramu.
+Razmisliti o duzini izvrasavanja odredjenih metoda.
